@@ -72,24 +72,200 @@ To use plan mode, the user can invoke it explicitly, or you can suggest: "This i
 
 **CRITICAL FOR NON-TECHNICAL SKILLS:** Ensure the task is narrow and specific enough.
 
-Ask the user:
-- What skill do they want to create?
-- What specific tasks should it handle?
-- What quality bar are they aiming for?
+Most users will start with a broad request. Your job is to help them narrow it down systematically until the task is specific enough that methodology and quality criteria are unambiguous.
 
-**If the request is too broad**, help narrow it down:
+## The 5-Layer Narrowing Framework
 
-Example dialogue:
-- User: "I want a skill for writing emails"
-- You: "Let's narrow this down. Emails vary greatly by context. Some possibilities:
-  - Cold outreach emails to potential customers?
-  - Internal status update emails to executives?
-  - Customer support response emails?
-  - Negotiation emails with vendors?
+Use this systematic approach to guide users from broad to specific:
 
-  Which specific type of email writing would be most valuable to you?"
+---
 
-**Goal:** Define a task so specific that the methodology and quality criteria are unambiguous.
+#### **Layer 1: Domain Identification**
+
+Identify the core domain(s) of the broad task.
+
+**Template questions:**
+```
+"[Broad task] can mean different things depending on the domain. Which of these is closest to what you need?
+- [Domain A - description]
+- [Domain B - description]
+- [Domain C - description]
+- Something else?"
+```
+
+**Example:**
+- User: "I want a skill for making decisions"
+- You: "Decision-making varies greatly by domain. Which is closest?
+  - Product decisions (features, roadmap, prioritization)?
+  - Hiring decisions (candidate evaluation, role definition)?
+  - Investment decisions (startups, projects, resource allocation)?
+  - Strategic business decisions (market entry, partnerships)?
+  - Something else?"
+
+---
+
+#### **Layer 2: Context Constraints (5W1H)**
+
+Once you know the domain, use structured questions to narrow the context:
+
+**Template questions:**
+```
+- **WHO**: Who will use this skill? (Role, seniority, expertise level)
+- **WHAT**: What specific output or decision does it produce?
+- **WHERE**: What organizational context? (Startup, enterprise, remote, industry)
+- **WHEN**: At what stage/timing is it used? (Launch, crisis, quarterly, daily)
+- **WHY**: What's the primary goal/outcome? (Alignment, approval, action, learning)
+- **HOW**: What constraints exist? (Time limits, process requirements, stakeholders)
+```
+
+**Example:**
+- User: "Product decisions"
+- You: "Let me understand the context better:
+  - WHO: Are you a PM, founder, or executive making these decisions?
+  - WHAT: Is this about choosing features, prioritization, or go/no-go launches?
+  - WHERE: Startup (limited resources) or enterprise (many stakeholders)?
+  - WHEN: Daily sprint planning or quarterly roadmap decisions?
+  - WHY: Main goal - team alignment, exec approval, or customer validation?"
+
+---
+
+#### **Layer 3: Comparative Narrowing**
+
+Present 2-3 similar but distinct scenarios. Force a choice or clarification.
+
+**Template:**
+```
+"Within [narrowed domain], I want to make sure we're targeting the right scenario. Which is closest?
+
+A. [Specific scenario A - with context]
+B. [Specific scenario B - with context]
+C. [Specific scenario C - with context]
+D. None of these / Combination
+
+Which matches best?"
+```
+
+**Example:**
+- User: "Feature prioritization for a PM at a B2B SaaS startup"
+- You: "Got it. Let me narrow further:
+
+  A. **Weekly sprint planning**: Prioritizing stories within a committed roadmap
+  B. **Quarterly roadmap planning**: Deciding which themes/initiatives for next quarter
+  C. **Reactive prioritization**: Customer escalation or urgent bug vs planned work
+  D. **Resource allocation**: Multiple products/teams competing for engineering time
+
+  Which scenario is most common for you, or do you need to handle multiple?"
+
+---
+
+#### **Layer 4: Boundary Validation (Via Negativa)**
+
+Confirm what the skill does NOT include. This clarifies the edges.
+
+**Template:**
+```
+"To make sure we're aligned, let me confirm the boundaries. This skill:
+- ✅ INCLUDES: [Specific scenario X]
+- ✅ INCLUDES: [Specific scenario Y]
+- ❌ EXCLUDES: [Related but different scenario A]
+- ❌ EXCLUDES: [Related but different scenario B]
+- ❌ EXCLUDES: [Related but different scenario C]
+
+Does this match your needs?"
+```
+
+**Example:**
+- User confirms: "Quarterly roadmap planning for a B2B SaaS PM"
+- You: "Perfect. To confirm scope, this skill:
+  - ✅ INCLUDES: Quarterly planning with engineering constraints
+  - ✅ INCLUDES: Balancing customer requests, tech debt, and strategic bets
+  - ❌ EXCLUDES: Daily sprint story prioritization
+  - ❌ EXCLUDES: Crisis/reactive priority decisions
+  - ❌ EXCLUDES: Multi-product portfolio prioritization (VP-level)
+
+  Is this right?"
+
+---
+
+#### **Layer 5: Concrete Case Anchoring**
+
+Ask for a real, specific example from their experience. This locks in the scope.
+
+**Template:**
+```
+"Can you describe a specific recent situation where you needed this skill? Include:
+- What was the situation/context?
+- What inputs did you have?
+- What decision/output did you need to produce?
+- What made it difficult or time-consuming?
+- What would an ideal outcome have looked like?"
+```
+
+**Example:**
+- User: "Yes, the scope is right"
+- You: "Great! One last thing to anchor our methodology research. Can you describe a recent quarterly planning session? For example:
+  - How many features/initiatives were you choosing between?
+  - What stakeholders were involved?
+  - What made it hard? (Conflicting data? Stakeholder disagreement? Technical uncertainty?)
+  - How long did the process take?
+  - What would have made it easier or better?"
+
+---
+
+## Stop Condition: Is It Narrow Enough?
+
+**Stop narrowing when you can answer YES to all:**
+
+1. ✅ **Unique methodology**: Would experts in this specific scenario have unique advice (not generic)?
+2. ✅ **Clear quality bar**: Could someone judge if the output is "excellent" vs "mediocre"?
+3. ✅ **Specific constraints**: Are there context-specific rules, tradeoffs, or failure modes?
+4. ✅ **Concrete example**: Has the user described a real scenario where they'd use this?
+5. ✅ **Excludes alternatives**: Is it clear what related tasks this does NOT cover?
+
+**If ANY answer is NO, keep narrowing.**
+
+---
+
+## Common Mistakes: Still Too Broad
+
+Even after narrowing, watch for these signs the scope is still too broad:
+
+❌ **Too broad:**
+- "Write better emails" → Includes too many email types
+- "Make product decisions" → Covers too many decision types
+- "Create marketing content" → Content types vary wildly
+- "Improve team communication" → Communication contexts differ greatly
+
+✅ **Narrow enough:**
+- "Write B2B cold outreach emails to enterprise CTOs"
+- "Quarterly roadmap prioritization for B2B SaaS PMs with 3-5 eng team"
+- "Create LinkedIn thought leadership posts for technical founders"
+- "Run effective incident postmortems for distributed systems teams"
+
+**Rule of thumb:** If you can describe the skill in one sentence with specific role, context, and output type, you're probably narrow enough.
+
+---
+
+## Quick Reference: Narrowing Question Flow
+
+```
+Broad Request
+    ↓
+Layer 1: "Which domain?" → [Pick one]
+    ↓
+Layer 2: "5W1H context?" → [Answer constraints]
+    ↓
+Layer 3: "Which specific scenario?" → [Choose from 2-3 options]
+    ↓
+Layer 4: "What's excluded?" → [Confirm boundaries]
+    ↓
+Layer 5: "Give me a real example" → [Describe concrete case]
+    ↓
+Check Stop Condition → [All 5 YES?]
+    ↓
+✅ Narrow enough → Proceed to Step 2
+❌ Still broad → Continue narrowing
+```
 
 ### Step 2: Identify Relevant Domains
 
@@ -275,19 +451,99 @@ Before finalizing, verify:
 - [ ] For complex skills: Did we consider using plan mode?
 - [ ] Did we structure our thinking before acting?
 
-## Example Interaction
+## Example Interaction: Full Narrowing Process
+
+This example shows the complete 5-layer narrowing in action.
+
+---
 
 **User**: I want to create a skill for writing product requirement documents.
 
-**Assistant**: I can help with that. First, let me make sure we're scoped properly. PRDs can vary significantly by context:
-- Are these for internal feature specs for engineers?
-- Stakeholder alignment documents for executives?
-- Product briefs for design teams?
-- Technical requirements for external vendors?
+**Assistant**: Great! PRDs are an important skill. Let me help narrow this down using a systematic approach.
 
-Which specific type of PRD would be most valuable for you?
+**[Layer 1: Domain Identification]**
 
-**User**: Internal feature specs for engineers at a B2B SaaS company.
+PRDs can serve different purposes depending on the audience and goal. Which is closest to what you need?
+- **Engineering-focused specs**: Detailed feature requirements for implementation
+- **Stakeholder alignment docs**: High-level documents to get buy-in from executives/leadership
+- **Design briefs**: Product requirements focused on user experience and design direction
+- **External vendor specs**: Technical requirements for third-party development
+
+Which type of PRD do you most often need to write?
+
+**User**: Engineering-focused specs.
+
+**Assistant**: Perfect. Now let me understand the context better.
+
+**[Layer 2: Context Constraints (5W1H)]**
+
+- **WHO**: What's your role? (PM, Senior PM, Product Lead, or Founder?)
+- **WHERE**: What type of company? (Startup, mid-size, or enterprise? B2B or B2C?)
+- **WHEN**: How often do you write these? (Every sprint? Per quarter? Per major initiative?)
+- **WHY**: Primary goal - is it to get eng buy-in, ensure nothing is missed, or facilitate estimation?
+- **HOW**: Any constraints - do you follow a specific template? Any required sections?
+
+**User**: I'm a Senior PM at a B2B SaaS company (100 people, growing fast). I write PRDs for major features (usually 3-5 per quarter). Main goal is to ensure engineers have everything they need to start building without constant back-and-forth. No required template, but we try to keep docs under 2 pages.
+
+**Assistant**: Excellent context. Let me narrow further.
+
+**[Layer 3: Comparative Narrowing]**
+
+Within "engineering PRDs for major features," which scenario is most common?
+
+A. **Net-new features**: Building something completely new (new product area, new capability)
+B. **Major enhancements**: Significant upgrades to existing features (new workflow, architecture change)
+C. **Cross-system features**: Features requiring coordination across multiple teams/services
+D. **Customer-driven builds**: Custom features for enterprise customers with tight timelines
+
+Which is most frequent, or do you need to handle multiple types?
+
+**User**: Mostly A and B. Sometimes C, but rarely D.
+
+**Assistant**: Got it. Let me confirm the boundaries.
+
+**[Layer 4: Boundary Validation]**
+
+So this skill should:
+- ✅ INCLUDE: Net-new features and major enhancements for engineering teams
+- ✅ INCLUDE: B2B SaaS context with 3-10 engineer scope typically
+- ✅ INCLUDE: Cross-team coordination when needed
+- ❌ EXCLUDE: Small story-level specs (those go directly in Jira/tickets)
+- ❌ EXCLUDE: Customer-specific custom builds with tight deadlines
+- ❌ EXCLUDE: Executive-facing strategy documents or roadmap presentations
+
+Does this match what you need?
+
+**User**: Yes, exactly!
+
+**Assistant**: Perfect. One final question to anchor the methodology research.
+
+**[Layer 5: Concrete Case Anchoring]**
+
+Can you describe a recent PRD you wrote that was either particularly challenging or time-consuming? For example:
+- What feature were you speccing?
+- What made it hard to write the PRD?
+- How long did it take you?
+- Did engineers come back with lots of questions, or did it work well?
+
+**User**: Last month I wrote a PRD for an API rate limiting feature. Took me about 6 hours spread over 3 days. The hard part was explaining the business logic (what counts toward limits, how to handle bursts) clearly enough that engineers understood the intent but could still design the technical solution. We did 2 rounds of clarification before they felt ready to estimate. Would love to get that down to 3 hours and one round of Q&A.
+
+**Assistant**: Perfect! Now I have a crystal-clear picture.
+
+**📌 Final Skill Definition:**
+
+"Create engineering-focused PRDs for B2B SaaS senior PMs writing specs for net-new features and major enhancements. PRDs should be 1-2 pages, clearly communicate business logic and user needs without over-specifying technical implementation, and enable engineering teams to estimate and start building with minimal back-and-forth."
+
+This passes all 5 stop conditions:
+1. ✅ Unique methodology - Yes (balancing business logic vs technical freedom)
+2. ✅ Clear quality bar - Yes (minimize eng questions, enable estimation)
+3. ✅ Specific constraints - Yes (B2B SaaS, 1-2 pages, major features)
+4. ✅ Concrete example - Yes (API rate limiting feature, 6→3 hours)
+5. ✅ Excludes alternatives - Yes (not small stories, not exec docs)
+
+Ready to move to Step 2: Methodology Research. Since this is a non-technical skill involving communication and judgment, I'd recommend using **plan mode** to think through the methodology research carefully. Should I proceed in plan mode?
+
+**User**: Yes, go ahead.
 
 **Assistant**: Perfect, that's specific enough. Since this is a non-technical skill involving communication and judgment, I'd recommend using **plan mode** to think through the methodology research carefully. Should I proceed in plan mode?
 
