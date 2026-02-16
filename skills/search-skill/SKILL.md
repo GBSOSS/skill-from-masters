@@ -31,6 +31,11 @@ Examples:
 | travisvn/awesome-claude-skills | github.com/travisvn/awesome-claude-skills | Community curated, 21k+ stars |
 | skills.sh | skills.sh | Vercel's official directory |
 
+### Tier 2.5 - Large Community Registry
+| Source | URL | Notes |
+|--------|-----|-------|
+| ClawHub | clawhub.ai | OpenClaw official skill registry, 5000+ community skills, vector search powered |
+
 ### Tier 3 - Aggregators (use with caution)
 | Source | URL | Notes |
 |--------|-----|-------|
@@ -47,15 +52,16 @@ Extract from user description:
 
 ### Step 2: Multi-Source Search
 
-**IMPORTANT: Only search these 5 sources. Do NOT search the entire internet.**
+**IMPORTANT: Only search these 6 sources. Do NOT search the entire internet.**
 
 Search by priority:
 
 ```
 1. Search Tier 1 (official/high trust) first
 2. If fewer than 5 results, continue to Tier 2
-3. If still insufficient, search Tier 3 with strict filtering
-4. If still nothing found, tell user honestly - do NOT expand to other sources
+3. If still insufficient, search Tier 2.5 (ClawHub - large volume, check quality)
+4. If still insufficient, search Tier 3 with strict filtering
+5. If still nothing found, tell user honestly - do NOT expand to other sources
 ```
 
 Allowed search queries (use `site:` to restrict):
@@ -64,12 +70,14 @@ site:github.com/anthropics/skills {keywords}
 site:github.com/ComposioHQ/awesome-claude-skills {keywords}
 site:github.com/travisvn/awesome-claude-skills {keywords}
 site:skills.sh {keywords}
+site:clawhub.ai {keywords}
 site:skillsmp.com {keywords}
 ```
 
 Search methods:
 - GitHub repos: Use `site:github.com/{repo}` to restrict search scope
 - skills.sh: WebFetch to scrape search results from skills.sh only
+- ClawHub: WebFetch `clawhub.ai/skills?q={keywords}` to search the registry
 - skillsmp.com: WebFetch with additional verification
 
 **Do NOT:**
@@ -104,6 +112,7 @@ Score = Source Weight × 0.4 + Stars Weight × 0.3 + Recency Weight × 0.2 + Rel
 Source weights:
 - Tier 1: 1.0
 - Tier 2: 0.7
+- Tier 2.5 (ClawHub): 0.55
 - Tier 3: 0.4
 ```
 
