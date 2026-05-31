@@ -1,0 +1,192 @@
+﻿財策新世代：邁向具身化金融素養的戲劇教育範式轉移研究報告
+第一章 緒論：金融複雜性時代的教育回應
+1.1 研究背景與問題意識
+在二十一世紀的第三個十年，全球金融體系正面臨前所未有的結構性轉型。隨著金融科技（FinTech）的飛速發展，去中心化金融（DeFi）、虛擬資產、算法交易以及嵌入式金融服務（Embedded Finance）已徹底重塑了傳統的經濟互動模式。對於身處國際金融中心的香港青少年而言，這既是機遇，亦是巨大的認知挑戰。經濟合作與發展組織（OECD）在其 PISA 2022 財經素養評估框架中明確指出，現代金融素養已超越單純的數學計算或儲蓄知識，而是一種包含「知識、技能、態度、動機與行為」的綜合能力，是個體在現代社會生存的關鍵技能 (OECD, 2024)。
+然而，當前的理財教育（Financial Education, FE）面臨著嚴峻的「效能落差」。儘管香港教育局（EDB）已透過「理財教育學校獎勵計劃」及跨學科滲透（如生活與社會科、企業、會計與財務概論）積極推動理財教育 (Education Bureau, 2023)，但實證數據顯示，單靠傳統的課堂講授與認知層面的知識傳遞，難以有效轉化為學生的實際行為改變。香港投資者及理財教育委員會（IFEC）的研究指出，學生普遍認為現有的理財課程與其生活脫節，缺乏趣味與互動性 (IFEC, 2019)。更為甚者，面對精心設計的心理陷阱——如「先買後付」（BNPL）的即時滿足機制 (Threadgold et al., 2024) 以及利用人工智能（Deepfake）技術的高端詐騙 (Hong Kong Police Force, 2024)——學生往往在具備基礎知識的情況下依然因心理偏差而受害。
+本報告提出「財策新世代」（The New Generation of Financial Planning）框架，旨在填補這一教育缺口。本研究以資深戲劇教育工作者的視角，論證戲劇並非僅是藝術學科，而是一種強而有力的「預演現實」（Rehearsal for Reality）教學法。透過結合「過程劇」（Process Drama）與「受壓迫者劇場」（Theatre of the Oppressed, TO）的技法，我們試圖將抽象的金融概念轉化為具身經驗（Embodied Experience），讓學生在安全的虛構情境中，演練面對金錢誘惑、資源分配兩難及詐騙壓迫時的決策過程。
+1.2 研究範疇與核心支柱
+本報告將深入探討三大核心支柱，並對應特定的戲劇教學策略：
+核心支柱
+	關鍵議題
+	對應戲劇策略
+	教育目標 (基於 EDB/IFEC/OECD 框架)
+	個人理財 (Personal Finance)
+	消費主義、信貸風險、價值觀
+	過程劇 (Process Drama) 之「專家外衣」(Mantle of the Expert)
+	建立理性消費態度、理解借貸後果、培養長期規劃能力
+	公共財政 (Public Finance)
+	資源稀缺性、機會成本、社會契約
+	參與式預算 (Participatory Budgeting) 模擬與角色扮演
+	理解公共資源分配的權責、培養公民同理心與多角度思考
+	FinTech 風險 (FinTech Risks)
+	數碼詐騙、算法操控、心理防禦
+	論壇劇場 (Forum Theatre) 與「慾望彩虹」(Rainbow of Desire)
+	提升資訊辨識能力、增強抗逆力 (Resilience)、解構心理操控機制
+	1.3 報告架構與方法論
+本報告採用跨學科分析法，結合教育學、戲劇理論、行為經濟學與公共政策分析。在論述過程中，我們將廣泛引用香港教育局的課程文件、香港交易所慈善基金（HKEX Foundation）的項目方針、以及英美澳等地的戲劇教育學術文獻（如 Dorothy Heathcote, Augusto Boal, Cecily O'Neill 的理論）。報告不僅提供理論論證，更將詳細描繪教學實踐的具體操作（Praxis），旨在為政策制定者、學校管理者及前線教育工作者提供一份詳盡的實施藍圖。
+________________
+第二章 理論基礎：從認知傳遞到具身模擬
+2.1 理財教育的行為學轉向
+傳統理財教育假設人是理性的經濟人（Homo Economicus），只要提供充足的資訊，個體就會做出最有利的決策。然而，Kaiser 等人（2020）的統合分析以及行為經濟學的研究表明，財務決策深受情緒、社會規範及認知偏差（如現時偏誤、過度自信）的影響。因此，有效的理財教育必須介入「態度」與「行為」層面。
+香港理財能力架構（FCF）亦強調「動機」與「態度」的重要性 (IFEC, 2019)。這正是戲劇教育的切入點。戲劇提供了一個「中介空間」（Metaxis），讓學生既身在戲中（體驗角色的情緒與壓力），又身在戲外（作為學生進行客觀反思）(Boal, 1995; O'Neill, 1995)。這種雙重意識（Dual Consciousness）使學生能夠在不承擔真實財務後果的前提下，安全地試錯並修正行為模式。
+2.2 過程劇與專家外衣（Mantle of the Expert）
+Dorothy Heathcote 創立的「專家外衣」教學法（MoE）徹底改變了師生權力關係。在 MoE 中，教師不再是知識的擁有者，學生也不再是被動的接收者。相反，班級被重構為一個「專家團隊」（例如投資顧問公司、歷史學家團隊），受託於一個虛構的客戶去解決複雜難題 (Heathcote & Bolton, 1995; Taylor, 2016)。
+這種模式對於理財教育至關重要。當學生被賦予「財務顧問」的專家身份時，他們的學習動機從「為了考試」轉變為「為了對客戶負責」。他們必須主動搜尋資料、分析數據、並為客戶制定方案。這種基於探究（Inquiry-based）與任務（Task-based）的學習模式，能顯著提升學生的自我效能感（Self-Efficacy）與專業素養，這與 IFEC 強調的培養負責任金融行為不謀而合 (Selderslaghs, 2019)。
+2.3 受壓迫者劇場與論壇劇場
+巴西戲劇家 Augusto Boal 發展的「受壓迫者劇場」（TO）原本用於社會政治抗爭，但其核心理念——賦權（Empowerment）與對話（Dialogue）——對於對抗現代金融體系中的「隱形壓迫」（如演算法操控、詐騙劇本）具有極高的應用價值 (Boal, 2000; Sullivan et al., 2008)。
+在「論壇劇場」（Forum Theatre）中，演出呈現一個以失敗告終的場景（Anti-model）。「丑客」（Joker，即引導者）邀請觀眾（學生）喊「停」，並上台取代主角（Spect-actor），嘗試改變結局 (Boal, 1992)。這是一個集體解難的過程，學生不再是旁觀者，而是行動者。透過反覆演練對抗壓迫的策略，學生在神經層面建立了一種「反操控」的肌肉記憶，這對於防範利用心理弱點的金融詐騙尤為有效。
+________________
+第三章 第一支柱：個人理財——透視消費迷霧的專家視角
+3.1 議題深探：Z 世代的信貸危機與消費心理
+隨著數碼支付的普及，「無痛支付」（Cashless Effect）現象在青少年群體中日益顯著。而「先買後付」（BNPL）平台的興起，更利用將大額消費拆分為小額供款的機制，降低了消費門檻，誘導缺乏理財經驗的年輕人過度消費 (Lachance, 2021; Threadgold et al., 2024)。研究顯示，大腦在處理 BNPL 交易時，所產生的「支付痛感」遠低於現金交易，導致衝動控制機制失效。此外，社交媒體上的比較文化（FOMO - Fear Of Missing Out）亦是推動非理性消費的重要驅動力 (Payment Systems Regulator, 2022)。
+3.2 過程劇設計實踐：財務修復事務所
+針對上述問題，我們設計了一套基於 MoE 的教學單元，名為「財務修復事務所」。
+3.2.1 第一階段：建立企業（The Enterprise）
+教師入戲（Teacher-in-Role）作為事務所的高級合夥人，引導學生建立一家專門拯救陷入財務危機青年的顧問公司。
+* 活動： 設計公司標誌、撰寫使命宣言（如「重塑價值，重啟人生」）。
+* 目的： 透過儀式感的建立，讓學生從「學生」身分轉換為「專家」身分，提升其對任務的投入度與責任感 (Taylor, 2016)。
+3.2.2 第二階段：客戶委託（The Commission）
+* 情境： 事務所接到一位焦慮母親的委託，她的兒子 "Alex"（22歲，初入職場）面臨破產邊緣。
+* 證據導向學習： 教師提供一箱「證物」（道具），包含 Alex 凌亂的收據、未拆封的網購包裹、BNPL 平台的催款短訊截圖、以及顯示其光鮮生活的 Instagram 頁面列印件。
+* 任務： 專家團隊需要像法醫一樣，從這些碎片中重組 Alex 的財務狀況與心理狀態。這不僅是數學計算（加總債務），更是心理側寫。學生需要分辨哪些開支是「需要」（Needs），哪些是源於虛榮或焦慮的「想要」（Wants）(EDB, 2023)。
+3.2.3 第三階段：深入心理機制
+為了解構 Alex 的消費動機，運用戲劇習式（Conventions）：
+* 牆上角色（Role on the Wall）： 在白板上畫出 Alex 的輪廓。輪廓內寫下他的感受（如：孤獨、短暫的興奮、還款的恐懼），輪廓外寫下外部壓力（如：網紅推銷、朋輩壓力、廣告算法）。這讓學生直觀地看到，財務問題往往是心理與社會問題的反映 (Neelands & Goode, 2000)。
+* 思路追蹤（Thought Tracking）： 學生構建一個 Alex 準備按下「確認付款」鍵的靜像（Tableau）。教師輕拍扮演 Alex 的學生，該學生需說出當下的內心獨白（例如：「只要買了這個，我就能融入他們了」）。這讓學生深刻體認到消費衝動背後的情感缺失。
+3.2.4 第四階段：制定解決方案與模擬談判
+* 專家建議： 團隊需利用理財工具（如預算表、債務滾雪球法）為 Alex 制定還款計劃。
+* 模擬對話： 學生輪流扮演專家，與扮演 Alex 的教師進行面談。這是一場高難度的溝通演練。學生不僅要解釋冰冷的數字，還要展現同理心，說服 Alex 改變生活方式，剪斷信用卡或刪除購物 App。這呼應了 HKEX Foundation 項目中強調的「賦能」與「行為改變」目標 (HKEX Foundation, 2024)。
+3.3 成效分析
+此單元通過將學生置於「助人者」的位置，巧妙地回避了直接說教可能引起的逆反心理。當學生為了幫助 Alex 而痛陳 BNPL 的弊端時，他們實際上是在向自己灌輸這些價值觀。Walstad 等人（2010）的研究指出，財務信心與知識同樣重要，MoE 正是透過成功的模擬經驗，建立了學生管理財務的信心。
+________________
+第四章 第二支柱：公共財政——資源分配與公民責任的劇場模擬
+4.1 議題深探：公共財政的社會契約本質
+香港教育局的生活與社會科及公民與社會發展科課程中，均要求學生理解公共財政的原則及其對社會發展的影響 (EDB, 2020)。然而，對於學生而言，「財政預算案」往往只是一堆遙不可及的數字。戲劇教育的任務，是將這些宏觀數字還原為具體的社會契約與人際博弈。核心概念包括機會成本（Opportunity Cost）、資源稀缺性（Scarcity）以及不同持份者之間的利益平衡。
+4.2 參與式預算劇場（Participatory Budgeting Drama）
+借鑒全球興起的「參與式預算」（Participatory Budgeting, PB）實踐 (Cabannes, 2004; Dias, 2018)，我們構建了一個名為「未來城市：資源保衛戰」的戲劇模擬。
+4.2.1 劇本前文本（Pre-text）
+設定一個虛構的社區「彩虹港」，政府撥出一筆 5000 萬港元的專項基金用於社區重建。然而，根據最新的經濟預測，政府收入減少，這筆基金面臨 30% 的削減風險，或者必須在多個項目中做出殘酷的取捨 (Participatory Budgeting Project, 2024)。
+4.2.2 角色分配與持份者深度入戲
+全班學生分為不同的利益團體，每組需深入研究其角色的背景與需求，並撰寫「立場書」：
+* 銀髮族聯盟： 要求增設長者醫療中心與無障礙設施。他們強調過去對社會的貢獻及現時的醫療剛需。
+* 青年創科力量： 要求建立共享工作空間、高速網絡基建及創業基金。他們強調這是城市的未來經濟引擎。
+* 基層家庭互助會： 要求增加公營託兒服務、食物銀行及維修舊樓。他們強調生存的基本權利。
+* 財政官員（可由教師擔任）： 強調量入為出、財政儲備的可持續性及審慎理財原則 (EDB, 2020)。
+4.2.3 戲劇化的審議程序
+* 市政廳會議（Town Hall Meeting）： 這不是普通的辯論，而是帶有角色情感的控訴與說服。學生必須運用修辭技巧與情感感染力來爭取預算。
+* 良心巷（Conscience Alley）： 當會議陷入僵局（例如：必需在「長者中心」與「創科中心」之間二選一），決策者（由選出的學生代表擔任）需走過由兩派支持者組成的通道。兩旁的學生在決策者耳邊低語其訴求與理由。這將決策的壓力具象化，讓學生親身體驗執政者面臨的道德兩難 (Neelands & Goode, 2000)。
+* 突發危機（The Twist）： 教師以新聞報導的形式引入突發事件（如：全球金融海嘯導致出口大跌）。預算即時被凍結，各組必須在 10 分鐘內達成一個「共識方案」，否則所有撥款將被收回。這迫使學生從「競爭」轉向「合作」，學習妥協的藝術。
+4.3 教學價值：從個人利益到公共善
+透過這種高強度的模擬，學生能深刻理解公共財政並非簡單的加減數，而是價值觀的排序。他們學習到每一項公共支出的背後都有機會成本——選擇了 A 就必須放棄 B。這種體驗有助於培養學生以更理性、更具大局觀的態度去審視政府的財政報告，從而成為具備高質素公民素養的下一代，這完全符合 HKEX Foundation 推動社會賦權（Social Empowerment）的願景 (HKEX Foundation, 2024)。
+________________
+第五章 第三支柱：FinTech 風險——對抗數碼壓迫的論壇劇場
+5.1 議題深探：詐騙作為高科技壓迫
+在 FinTech 時代，金融風險已從市場波動轉變為惡意的人為操控。深度偽造（Deepfake）技術能完美複製親友的聲音與面貌 (Hong Kong Police Force, 2024)；「殺豬盤」（Pig Butchering）利用長期的情感培養（Love Bombing）來收割受害者的積蓄 (Deevy & Beals, 2013)；虛假投資 App 則利用遊戲化界面（Gamification）刺激多巴胺分泌，讓人上癮 (Group-IB, 2024)。
+從 Boal 的視角來看，這是一場權力極度不對等的壓迫。詐騙者擁有劇本、技術與心理學優勢，而受害者往往處於資訊真空與情感脆弱的狀態。傳統的「防騙講座」難以對抗這種針對杏仁核（Amygdala，負責情緒反應）的攻擊。
+5.2 論壇劇場（Forum Theatre）實戰演練
+我們運用論壇劇場，將詐騙過程解構為可被干預的戲劇行動。
+5.2.1 構建反面模型（Anti-model）
+基於香港警方的真實案例 (Anti-Deception Coordination Centre, 2024)，師生共同編創一段短劇，展現主角如何一步步落入陷阱並最終損失慘重。
+* 劇本範例： 主角 "Chris" 收到自稱「內地官員」的視像電話（AI 換臉），指控其洗黑錢。對方展示了像真度極高的「拘捕令」與「資產凍結令」，並利用權威語氣製造極度恐慌。Chris 在恐懼下，按指示將存款轉入「安全賬戶」。
+* 關鍵細節： 劇本必須精確呈現詐騙者的心理操控手段，如製造時間緊迫感（Urgency）、切斷受害者的社會聯繫（Isolation）、以及利用受害者的守法心理。
+5.2.2 丑客（Joker）的引導與介入
+Joker 是論壇劇場的核心靈魂 (Boal, 1992)。在反面模型演出後，Joker 打破第四面牆，向觀眾（學生）提問：
+* 「Chris 是笨蛋嗎？還是這個局佈得太完美？」
+* 「在這個過程中，有沒有哪一個時刻，結局是可以被改變的？」
+* 「如果是你，面對這樣的恐懼，你能保持冷靜嗎？」
+5.2.3 觀演者（Spect-actor）的演練
+Joker 邀請學生喊「停！」，上台取代 Chris（Spect-actor），嘗試運用不同策略來破解騙局。
+* 策略演練：
+   * 策略 A（核實）： 學生嘗試掛斷電話，致電警方防騙熱線 18222。
+   * 策略 B（質疑）： 學生要求對方提供更多證明，或故意詢問一些只有真人才知道的邏輯漏洞。
+   * 策略 C（拖延）： 學生假裝配合，爭取時間尋求家人協助。
+* 壓迫者的反擊： 飾演詐騙者的演員（需受過訓練）不會輕易投降，而是會加強攻勢（例如：變得更兇狠、威脅要立即拘捕其家人）。這迫使學生在高度真實的壓力下，測試其對策的有效性。
+5.2.4 慾望彩虹（Rainbow of Desire）：解構內在警察
+詐騙往往利用受害者的內在弱點（貪婪、恐懼、寂寞）。利用 Boal 的「慾望彩虹」技法，我們可以具象化這些心理因素。
+* 活動： 當主角猶豫是否轉賬時，幾位學生上台站在主角身後，分別飾演他內心的聲音（Cop-in-the-Head）：
+   * 聲音一（恐懼）：「如果我不轉錢，我的一生就毀了！」
+   * 聲音二（理智）：「政府部門不會要求電話轉賬的。」
+   * 聲音三（盲從）：「你看那個制服，是真的警察啊！」
+* 分析： 透過外化這些聲音，學生能清晰辨識出詐騙者是如何利用情緒來壓倒理智，從而學會如何在關鍵時刻喚醒「批判性意識」（Critical Consciousness）。
+5.3 神經科學與戲劇的交匯
+這種演練不僅是技巧性的，更是神經層面的。當學生在戲劇中成功抵抗了詐騙者的施壓，他們的大腦會記錄下這種成功的情緒體驗。這種「預演」建立了一種認知防禦機制，當現實中遇到類似情境時，大腦能更快地從直覺反應（System 1）切換到理性分析（System 2）(Wood & Hanoch, 2021)。這比單純背誦「防騙三寶」有效得多。
+________________
+第六章 課程整合、實施策略與資源配置
+6.1 跨學科課程地圖
+為了落實「財策新世代」，我們建議將上述三大支柱整合入現有的中學課程架構，而非單獨設科，以符合 EDB 提倡的跨課程學習（Cross-curricular approach）(EDB, 2023)。
+年級
+	建議科目/時段
+	核心主題
+	戲劇策略
+	具體學習重點 (參考 FCF/EDB)
+	中一至中三
+	生活與社會科 / 價值觀教育
+	個人理財：消費與價值
+	過程劇 (專家外衣)
+	分辨需要/想要；制定預算；電子支付風險 (EDB, 2023)
+	中四至中六
+	公民與社會發展科 / OLE
+	公共財政：資源分配
+	參與式預算劇場
+	理解政府收支；分析公共政策影響；公民責任 (EDB, 2020)
+	全校性活動
+	週會 / 課後活動
+	FinTech 風險：防騙
+	論壇劇場
+	辨識詐騙特徵；網絡安全意識；批判性思考 (ADCC, 2024)
+	6.2 資源整合與持份者合作
+* HKEX Foundation 的角色： 學校應積極申請 HKEX Foundation 的資助，將其資源用於聘請專業戲劇教育團體入校，進行師資培訓及舉辦大型論壇劇場演出。HKEX 的項目強調「理財能力」與「社會賦權」，這與本框架的目標高度一致 (HKEX Foundation, 2024)。
+* 警務處反詐騙協調中心 (ADCC)： 學校應與 ADCC 建立恆常機制，獲取最新的詐騙劇本與數據，作為論壇劇場的素材庫。這確保了教學內容的時效性與真實性 (ADCC, 2024)。
+* 家校合作： 家長往往是理財教育的缺失環節。學校可舉辦「親子理財劇場夜」，讓學生與家長共同參與論壇劇場，這不僅能教育家長（他們同樣是詐騙的高危群體），也能促進親子間關於金錢話題的開放溝通 (IFEC, 2019)。
+6.3 評估機制的革新
+傳統的紙筆測驗無法評估學生的行為改變。本框架建議採用表現性評估（Performance Assessment）：
+1. 過程評估： 觀察學生在過程劇中「入戲」的深度、解決問題的創意及團隊合作能力。
+2. 反思日誌： 要求學生以「角色」身分撰寫日誌，記錄其決策背後的心理轉折。
+3. 實戰演練： 在論壇劇場中，評估學生能否靈活運用防騙策略，而非死記硬背知識點。
+6.4 師資培訓：Joker 的誕生
+實施本框架的最大挑戰在於教師的能力建設。並非所有老師都具備戲劇引導能力。因此，教育局或辦學團體應組織工作坊，培訓前線教師成為「Joker」。培訓重點不在於演技，而在於：
+* 如何建立安全及包容的討論空間。
+* 如何運用提問技巧（Questioning Techniques）引導深度反思。
+* 如何處理戲劇中可能湧現的情緒反應。
+這將賦權教師，使其從單純的知識傳遞者轉型為學習的促進者（Facilitator）(Campbell, 2019)。
+________________
+第七章 結論：邁向具身化的金融公民素養
+「財策新世代」不僅僅是一套教學方案，它代表了一種理財教育的範式轉移——從「腦」到「身」，從「被動接收」到「主動演練」。
+透過 過程劇，我們讓學生在虛構的企業中，以專家的視角審視消費主義，重塑價值觀。
+透過 參與式預算劇場，我們讓公共財政從冰冷的數字變成了有溫度的社會契約，培養了學生的公民責任感。
+透過 論壇劇場，我們將高科技詐騙解構為可對抗的壓迫，為學生穿上了心理防禦的鎧甲。
+正如戲劇教育先驅 Dorothy Heathcote 所言，戲劇是「為了生活而預演」（Rehearsal for living）。在充滿不確定性與高風險的金融未來，我們能給予學生最寶貴的資產，不是一時的投資貼士，而是一顆經過演練、懂得批判、能夠在複雜情境中做出明智決策的大腦，以及一顆具備同理心與責任感的公民之心。這正是「財策新世代」的終極願景。
+________________
+參考文獻 (References)
+Anti-Deception Coordination Centre (ADCC). (2024). Latest scam alerts: Fraudulent investment platforms and deepfake scams. Hong Kong Police Force. https://www.adcc.gov.hk/
+Bard, J. (2012). For financial literacy, the play's the thing. Communities & Banking, 23(4), 15-17.
+Boal, A. (1992). Games for actors and non-actors. Routledge.
+Boal, A. (1995). The rainbow of desire: The Boal method of theatre and therapy. Routledge.
+Boal, A. (2000). Theater of the oppressed (3rd ed.). Pluto Press.
+Cabannes, Y. (2004). Participatory budgeting: A significant contribution to participatory democracy. Environment and Urbanization, 16(1), 27–46.
+Campbell, A. (2019). The Joker as a facilitator of learning in Forum Theatre. Research in Drama Education: The Journal of Applied Theatre and Performance, 24(3), 321-337.
+Cohen-Cruz, J. (2010). Engaging performance: Theatre as call and response. Routledge.
+Deevy, M., & Beals, M. (2013). The nature, prevalence, and impact of elder financial abuse in the United States. Stanford Center on Longevity.
+Dias, N. (2018). Hope for democracy: 30 years of participatory budgeting worldwide. Ephemera.
+Education Bureau (EDB). (2020). Curriculum guide for Life and Society (Secondary 1-3). Government of the Hong Kong Special Administrative Region.
+Education Bureau (EDB). (2023). Financial education school award scheme: Guidelines and resources. Government of the Hong Kong Special Administrative Region.
+Group-IB. (2024). Fake trading apps target victims in Asia-Pacific. https://www.group-ib.com/
+Heathcote, D., & Bolton, G. (1995). Drama for learning: Dorothy Heathcote's mantle of the expert approach to education. Heinemann.
+HKEX Foundation. (2024). HKEX Impact Funding Scheme 2024-2025: Application guidelines. Hong Kong Exchanges and Clearing Limited.
+Home and Youth Affairs Bureau. (2022). Youth Development Blueprint. Government of the Hong Kong Special Administrative Region.
+Hong Kong Police Force. (2024). Scam statistics and trends: Investment and technology crimes. https://www.police.gov.hk/
+Investor and Financial Education Council (IFEC). (2019). Hong Kong financial competency framework. IFEC.
+Kaiser, T., Lusardi, A., Menkhoff, L., & Urban, C. (2020). Financial education affects financial knowledge and downstream behaviors. Journal of Financial Economics, 145(2), 255-272.
+Lachance, M. J. (2021). Young adults and the "Buy Now, Pay Later" phenomenon. Journal of Consumer Affairs, 55(3), 890-912.
+Neelands, J., & Goode, T. (2000). Structuring drama work: A handbook of available forms in theatre and drama. Cambridge University Press.
+OECD. (2024). PISA 2022 results (Volume IV): Financial literacy. OECD Publishing. https://doi.org/10.1787/5a849c2a-en
+O'Neill, C. (1995). Drama worlds: A framework for process drama. Heinemann.
+Participatory Budgeting Project. (2024). Participatory budgeting in schools: A toolkit for youth democratic action. https://www.participatorybudgeting.org/
+Payment Systems Regulator. (2022). Buy Now Pay Later: Understanding the risks for young consumers. UK Government.
+Selderslaghs, B. (2019). Mantle of the expert: An artistic approach to education. Royal Conservatoire Antwerp.
+Sullivan, J., Lloyd, R., & Prentki, T. (2008). The Joker's role in Forum Theatre. Trentham Books.
+Taylor, T. (2016). A beginner's guide to Mantle of the Expert. Singular Publishing.
+Threadgold, S., & Gerrard, J. (2024). The buy now pay later phenomenon among young people: Benefit or time bomb? Journal of Youth Studies.
+Walstad, W. B., Rebeck, K., & MacDonald, R. A. (2010). The effects of financial education on the financial knowledge of high school students. Journal of Consumer Affairs, 44(2), 336-357.
+Wells, T., & Sandretto, S. (2017). Learning "what it's like to be someone else": Developing holistic empathy with process drama. Journal of Applied Theatre and Performance, 22(1), 101-118.
+Wood, S., & Hanoch, Y. (2021). The scams among us: Who falls prey and why. Current Directions in Psychological Science, 30(3), 260–266.

@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教案（三）：還得到先好借！</title>
+
+    <style>
+        :root {
+            --phase1-color: #3498db;
+            --phase2-color: #e67e22;
+            --phase3-color: #c0392b;
+            --phase4-color: #27ae60;
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --sidebar-width: 0px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            margin: 0;
+            background-color: #fff;
+        }
+
+        /* Print Handbook Layout */
+        .main-content {
+            padding: 20px;
+            width: 100%;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background: white;
+            padding: 0;
+            /* Removing extra digital padding */
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: #000;
+            margin-top: 0;
+            border-bottom: 4px solid #333;
+            padding-bottom: 15px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 50px;
+            background: #f0f2f5;
+            padding: 15px 20px;
+            border-radius: 8px;
+            border-left: 10px solid #333;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            color: #34495e;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+
+        /* Timing Badge */
+        .time-badge {
+            background: #333;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            float: right;
+            margin-top: 5px;
+        }
+
+        /* Teacher Boxes (Action Cards & Notes) */
+        .teacher-box {
+            border: 2px solid #333;
+            background: #fff;
+            padding: 20px;
+            margin: 25px 0;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .teacher-box::before {
+            content: "導師指引 Teacher Guide";
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: #333;
+            color: white;
+            padding: 2px 12px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .maister-note {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-left: 8px solid #f1c40f;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        /* Grid for Metadata */
+        .badge-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin: 30px 0;
+            border: 1px solid #eee;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .badge-item {
+            font-size: 1rem;
+        }
+
+        .badge-label {
+            font-weight: bold;
+            color: #555;
+            margin-right: 10px;
+        }
+
+        /* Propaganda/Evidence Props Design */
+        .prop-container {
+            border: 3px double #000;
+            padding: 40px;
+            background-color: #fff;
+            margin: 40px 0;
+            page-break-inside: avoid;
+        }
+
+        .prop-label {
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-align: center;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        /* Sidebar Navigation - REMOVED for Handbook */
+        .sidebar {
+            display: none !important;
+        }
+
+        /* Print-specific optimizations */
+        @media print {
+            body {
+                font-size: 11pt;
+            }
+
+            .container {
+                box-shadow: none;
+                border: none;
+            }
+
+            .main-content {
+                padding: 0;
+                max-width: 100%;
+            }
+
+            h2 {
+                page-break-before: always;
+            }
+
+            .prop-container {
+                page-break-before: always;
+            }
+
+            .no-print {
+                display: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        /* Script UI elements - Collapsibles removed for Handbook */
+        .script-section {
+            margin: 20px 0;
+            padding: 0 10px;
+        }
+
+        .script-dialogue {
+            font-style: italic;
+            color: #444;
+            padding: 10px 20px;
+            border-left: 3px solid #eee;
+            margin: 10px 0;
+        }
+
+        /* Professional Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: #fff;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #eee;
+            line-height: 1.5;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            border-bottom: 2px solid #ccc;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        tr:hover {
+            background-color: #f5f7f9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="main-content">
+        <div class="container" id="overview">
+            <h1>教案（三）：還得到先好借！</h1>
+
+            <div class="badge-grid">
+                <div class="badge-item">
+                    <span class="badge-label">適用對象：</span>
+                    中一至中四學生
+                </div>
+                <div class="badge-item">
+                    <span class="badge-label">建議時間：</span>
+                    單次 100 分鐘課程
+                </div>
+                <div class="badge-item">
+                    <span class="badge-label">關鍵概念：</span>
+                    先買後付, 暗黑模式, 信用代價
+                </div>
+                <div class="badge-item">
+                    <span class="badge-label">重點習式：</span>
+                    專家外衣, 思路追蹤, 牆上的角色
+                </div>
+            </div>
+
+            <div class="maister-note">
+                <strong>🎓 教案設計理念與導師筆記 (過程即目的)</strong>
+                <p><strong>數位金融下的教育轉向：</strong> 在「先買後付」模式無孔不入的誘惑下，傳統說教難以奏效。本教案透過「角色進入」讓學生在安全的空間中模擬成年經濟行為。邀請學生扮演 UX
+                    設計師，從「評價者」轉變為「誘惑的旁觀者」，引發深度反思。</p>
+            </div>
+
+            <h3>🎯 活動背景與核心命題</h3>
+            <p><strong>活動背景：</strong> 學生扮演頂尖 UX 顧問，受 FuturePay CEO 委託解決轉化率低的問題，隨後親歷阿強因誘惑機制陷入債務螺旋的過程。</p>
+            <p><strong>核心命題：</strong> 探討「資訊透明」與「介面誘惑」的拉扯，建立「還得到先好借」的理性觀念。</p>
+
+            <hr>
+            <h3>📅 100 分鐘教學時間表</h3>
+            <table>
+                <tr>
+                    <th>時間</th>
+                    <th>章節</th>
+                    <th>核心活動</th>
+                </tr>
+                <tr>
+                    <td>00-20 min</td>
+                    <td>第一部份：誠實的代價</td>
+                    <td>CEO 會議與新舊 UI 比較</td>
+                </tr>
+                <tr>
+                    <td>20-40 min</td>
+                    <td>第二部份：債務的側影</td>
+                    <td>四年後的帳單與拒絕信</td>
+                </tr>
+                <tr>
+                    <td>40-75 min</td>
+                    <td>第三部份：清算的審判</td>
+                    <td>定格畫面、思路追蹤、防騙延伸討論</td>
+                </tr>
+                <tr>
+                    <td>75-85 min</td>
+                    <td>第四部份：迴聲與反思</td>
+                    <td>阿強的人生日記與總結</td>
+                </tr>
+                <tr>
+                    <td>85-100 min</td>
+                    <td>第五部份：解說與反思</td>
+                    <td>價值辯證、系統分析與個人責任</td>
+                </tr>
+            </table>
+        </div>
+
+
+        <section id="phase1">
+            <h2>第一部份：誠實的代價 <span class="time-badge">[20 min]</span></h2>
+
+            <div class="teacher-box">
+                <strong>導師行動摘要與教學策略：</strong>
+                <ul>
+                    <li><strong>專家外衣 (Mantle of the Expert)：</strong> 賦予學生「頂尖 UX
+                        設計顧問」的專業身分。新手老師常犯的錯誤是直接宣讀身份。正確的做法是透過儀式感建立，讓學生從決策者的視角審視問題。</li>
+                    <li><strong>教師入角 (Teacher-in-Role)：</strong> 導師扮演 FuturePay 的
+                        CEO。注意：不要只是演戲，要切實表現出「我有錢、有權，但我真的不懂現在年輕人在想什麼，我需要你們的專業」的姿態向學生請教。</li>
+                    <li><strong>深度觀察：</strong> 使用附件一與附件二進行「並置對比」(Juxtaposition)。引導學生不僅看表面，更要分析數字背後的「心理重量」。</li>
+                </ul>
+            </div>
+
+            <div
+                style="background-color: #fff3e0; border-left: 6px solid #ff9800; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                <strong>💡 新手導引錦囊一：如何處理學生的「嬉笑」？</strong>
+                <p>戲劇教育中，學生常因尷尬而發笑。<strong>導師建議：</strong> 不要用老師的身份責罵，要用「角色身份」壓回去。</p>
+                <p><em>範例：</em> 作為 CEO，你可以嚴肅地說：「各位顧問，這是一場關於公司存亡的嚴肅會議，我不明白有什麼好笑的。如果各位無法提供專業態度，我們的合約可能要重新考慮。」</p>
+            </div>
+
+            <div class="script-section">
+                <h4>[00:00-00:05] 第 1 步：建立「專家外衣」與情境帶入</h4>
+                <p><strong>教學指導：</strong> 導師在學生進入課室前，將座位排成會議室的「U型」或小組圓桌。當學生坐定後，導師以嚴肅、焦慮的步伐走進教室，不說多餘的廢話，直接進入 CEO 角色。</p>
+                <div class="script-dialogue">
+                    「各位顧問，感謝你們的團隊能緊急抽空出席。我是 FuturePay 的執行長。直白一點說，我們公司現在正面臨重大的經營危機。我聽說你們是全亞洲最好的
+                    UX（使用者體驗）設計團隊，我需要你們的專業，立即幫我解決一個關乎公司存亡的問題。」
+                </div>
+
+                <h4>[00:05-00:15] 第 2 步：診斷「誠實版」介面 (Friction Points)</h4>
+                <p><strong>教學指導：</strong> 導師展示「附件一：FuturePay 舊式「先買後付」付款介面」。給予學生 2 分鐘的安靜觀察時間，然後開始提問。</p>
+                <div class="script-dialogue">
+                    「大家請看大螢幕。這是我們目前的借貸付款介面——我們內部稱之為『誠實版』。這份介面包含了所有法律要求的資訊：總價 $12,300、利息 15%、還款年期。
+                    但可悲的數據顯示，90% 的用戶在看到這個介面後，都會選擇放棄購買。身為設計顧問，請你們發言告訴我：這個介面出了什麼問題？為什麼年輕人會被這幾排數字嚇跑？」
+                </div>
+                <p><strong>引導重點：：</strong> 鼓勵學生指出具體的「摩擦點」(Friction points)。導師可以追問：「看到 $12,300
+                    這個數字，你的身體有什麼感覺？是不是覺得很重？」(引導出「支付痛苦」的概念)。</p>
+
+                <h4>[00:15-00:20] 第 3 步：「暗黑設計」的誕生與並置對比</h4>
+                <p><strong>教學指導：：</strong> 當學生充分批評了舊版後，導師切換投影片至「附件二：FuturePay Easy 介面」。要求學生將兩者進行「並置對比」(Juxtaposition)。
+                </p>
+                <div class="script-dialogue">
+                    「為了解決這個問題，我們的內部開發團隊做了一個激進的測試版本——我們叫它 Easy 版。各位請看，這個介面去掉了所有沉重、難看的細節，只剩下一個溫柔的小數字：$205/月。
+                    我想聽聽各位顧問的專業意見：這兩個介面給人的『壓力感』有什麼不同？如果我要用戶在不知不覺中按下『確認』鍵，這個 Easy 介面做對了什麼事？」
+                </div>
+
+                <div class="maister-note">
+                    <strong>🎓 Maister's Note: 從專業解碼過渡到道德反思</strong>
+                    <p>在這個階段，導師要高度讚賞學生找出的設計心機，讓學生沉浸在「我很聰明地操控了用戶」的權力感中。這為下一階段「目睹受害者」的戲劇反轉鋪平了道路。學生需要理解以下兩個認知偏誤：</p>
+                    <ul>
+                        <li><strong>錨定效應 (Anchoring)：</strong> 舊版介面將「$12,300」這個大數字放在中心，成為了用戶的心理錨點，導致決策保守。</li>
+                        <li><strong>分期框架 (Framing)：</strong> 新版 Easy 介面將支付行為重構為「每日只需不到 7
+                            元」，這種極小化（Minimizing）的敘事有效降低了心理門檻，誘利用戶忽略了長期的財務束縛。</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="phase2">
+            <h2>第二部份：債務的側影 <span class="time-badge">[20 min]</span></h2>
+
+            <div class="teacher-box">
+                <strong>導師行動摘要：</strong>
+                <ul>
+                    <li><strong>情境跳躍 (Time Jump)：</strong> 宣告時間快進至四年後。Easy 版本成為行業標竿，公司利潤翻倍。</li>
+                    <li><strong>證物引入：</strong> 展示阿強的求助信（附件三）。導師繼續以 CEO 身分主持會議，語氣轉換為公事公辦的態度。</li>
+                    <li><strong>核心習式 (1)：牆上的角色 (Role on the Wall)：</strong>
+                        引導學生分析阿強的「內在想法」與「外在壓力」。</li>
+                    <li><strong>核心習式 (2)：入角寫作 (Writing in Role)：</strong>
+                        設計師草擬拒絕信，執行公司的標準程序。</li>
+                </ul>
+            </div>
+
+            <div class="script-section">
+                <h4>[00:20-00:23] 第 1 步：成功的背面 (Time Jump)</h4>
+                <p><strong>教學指導：</strong> 導師改變肢體語言，表現出自信與傲慢，象徵過去了四年，公司已經憑藉 Easy 介面大獲成功。</p>
+                <div class="script-dialogue">
+                    「各位顧問，四年前你們的建議簡直是天才之舉！自從推出了 Easy 介面，我們的用戶量增長了 500%。
+                    看看這份財報，我們多麼成功！但作為負責任的企業（帶點諷刺），我必須給你們看這封信。這是一個叫阿強的客戶發來的，他似乎遇到了點麻煩。」
+                </div>
+
+                <h4>[00:23-00:33] 第 2 步：阿強的「數據人生」(Role on the Wall)</h4>
+                <p><strong>教學指導：</strong>
+                    導師在黑板或白板上貼出一張畫有巨大空白人形輪廓的海報（或直接在白板繪製輪廓）。導師展示阿強的求助信（附件三）與帳單（附件四），引導全體參與者集體觀察、討論並同時將要點填入輪廓中。給予 10
+                    分鐘進行集體分析。</p>
+                <ul>
+                    <li><strong>輪廓內部 (主觀視角 - 紅色筆)：</strong> 導師記錄學生提出的角色主觀想法、感受、秘密或欲望（例如：阿強覺得寂寞、想被朋友認同、不想被看不起）。</li>
+                    <li><strong>輪廓外部 (客觀視角 - 黑色/藍色筆)：</strong> 導師記錄角色客觀面對的社會現實、他人的評價或具體事實（例如：欠債
+                        $7,200、銀行催款單、父母的期望、高昂的逾期行政費）。</li>
+                </ul>
+                <div
+                    style="background-color: #fff3e0; border-left: 6px solid #ff9800; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                    <strong>💡 新手導引錦囊二：引導分析內外衝突</strong>
+                    <p>在集體討論時，導師需引導學生發現：外在的財務缺口，與內在渴望認同的心理需求之間，存在著強烈的衝突。這能幫助學生更立體地理解角色的處境。</p>
+                </div>
+                <div style="background-color: #fffbe6; padding: 15px; border-radius: 8px; margin: 10px 0;">
+                    <strong>引導問題庫 (導師引導集體討論時提出)：</strong>
+                    <ul>
+                        <li>「大家看附件四第 1 項：LPhone 已經還了 $9,840，比原價貴了近 2000 元，為什麼他的心情還是不會感到輕鬆？」</li>
+                        <li>「看看他的赤字 (-$700)：阿強每個月省吃節用，為什麼負債反而越來越多？」</li>
+                        <li>「從附件四的第 5-8 項看，阿強是否真的『揮霍無度』？還是他掉進了我們設計的某種心理慣性？」</li>
+                    </ul>
+                </div>
+
+                <div class="maister-note">
+                    <strong>🎓 Maister's Note: 數據背後的冷酷現實</strong>
+                    <ul>
+                        <li><strong>結構性赤字：</strong> 學生需要理解「複利」與「行政費」的疊加效應。這不是單純的加減法，而是一種無法逃脫的數學陷阱。</li>
+                        <li><strong>心理帳戶：</strong> 阿強在申請 75% 的分期時可能都覺得「負擔得起」，這反映了用戶傾向於將每一筆小支出獨立化，而忽略了整體的承載力。</li>
+                    </ul>
+                </div>
+
+                <h4>[00:33-00:40] 第 3 步：企業的指令 (入角寫作)</h4>
+                <p><strong>活動引入：</strong> 導師引導學生從剛才對阿強的「理解」(Role on the Wall) 中抽離，回到 FuturePay 顧問的客觀視角。</p>
+                <div class="script-dialogue">
+                    「CEO：各位顧問，我理解你們的同情。但身為高層，我不能同意免除他的債務與利息。如果我們同意了，我們的股東會殺了我。我們是一間金融公司，規矩不能破。」
+                </div>
+                <p><strong>教學指導：</strong> 導師要求每位學生以 FuturePay 公司的角度，各自草擬一封簡單的拒絕信回覆給阿強 (Writing in Role)。</p>
+                <ul>
+                    <li><strong>寫作要求：</strong> 請每位學生各自在紙上寫下一封標準的官方拒絕信，說明公司無法豁免欠款，必須按合約執行。</li>
+                    <li><strong>時間控制：</strong> 給予 4 分鐘時間書寫。</li>
+                </ul>
+                <p><strong>總結：</strong> 時間到後，導師(CEO) 默默收起所有的信件：「各位完成了出色的工作，我會親自把這些信寄出去。散會。」</p>
+            </div>
+        </section>
+
+        <section id="phase3">
+            <h2>第三部份：清算的審判 <span class="time-badge">[35 min]</span></h2>
+
+            <div class="teacher-box">
+                <strong>導師行動摘要：</strong>
+                <ul>
+                    <li><strong>場景設定：</strong> 阿強正看著你們剛剛寄給他的那封拒絕信。具體地點與情境由小組學生共同想像（例如：狹窄的房間內、雜亂的辦公桌前、或是街角的 ATM 旁）。
+                    </li>
+                    <li><strong>核心習式 (1)：定格畫面 (Freeze Frame)：</strong> 以肢體建構視覺隱喻，呈現被這封信及債務徹底壓垮的空間意象。</li>
+                    <li><strong>核心習式 (2)：思路追蹤 (Thought Tracking)：</strong> 讓靜止的意象發聲，挖掘深層恐懼。</li>
+                    <li><strong>核心習式 (3)：集體討論 (Group Discussion)：</strong> 探討阿強在此絕境下的真實抉擇與社會代價。</li>
+                    <li><strong>核心習式 (4)：防騙延伸討論：</strong> 探討「快錢」陷阱，強化防騙意識。</li>
+                </ul>
+            </div>
+
+            <div class="script-section">
+                <h4>[00:40-00:45] 第 1 步：建構「債務囚籠」(Freeze Frame 定格畫面)</h4>
+                <p><strong>教學指導：</strong> 導師將全班分成 4-5 人一組，要求各組合作雕塑出一個概念性的畫面。</p>
+                <div class="script-dialogue">
+                    「導師：我們現在跳出 FuturePay 的顧問身份。阿強正看著你們剛剛代表公司草擬的那封『絕對不通融的拒絕信』。
+                    請每組決定阿強現在身處何方（公司？家中？和朋友一起？），以及周遭有什麼人或物。小組中 1 位扮演阿強，其他人則扮演這個情境下的其他人或物品。
+                    請發揮想像力，擺出一個『阿強被這封信徹底擊垮』的靜止畫面。等一下畫面定格後，我會走入你們之中，輕拍某些人的肩膀，被拍到的人要說出你當下的內心獨白。
+                    給你們 5 分鐘討論與排練，3、2、1，定格！」
+                </div>
+                <div
+                    style="background-color: #fff3e0; border-left: 6px solid #ff9800; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                    <strong>💡 新手導引錦囊三：解讀定格畫面</strong>
+                    <p>當畫面定格後，台下學生的任務是「解碼」。導師應引導台下學生從最基礎的觀察出發：</p>
+                    <ul>
+                        <li>「這裡是什麼地方？」</li>
+                        <li>「圖片中有哪些人？他們是誰？」</li>
+                        <li>「他們之間是什麼關係？」</li>
+                        <li>「整體的感覺（氣氛）是什麼？」</li>
+                    </ul>
+                </div>
+
+                <h4>[00:45-00:50] 第 2 步：傾聽角色的內心 (Thought Tracking 思路追蹤)</h4>
+                <p><strong>活動執行：</strong> 當畫面維持定格時，導師介紹並執行思路追蹤。</p>
+                <div class="script-dialogue">
+                    「導師：這個畫面充滿了張力，但非常安靜。現在，我會走進這個畫面。當我的手輕輕觸碰某個角色的肩膀時，我需要你立刻說出一句你當下內心最真實的獨白。」
+                </div>
+                <ul>
+                    <li><strong>教學重點：</strong> 導師觸碰阿強，或畫面中出現的其他角色（例如朋友、同事或路人）。</li>
+                    <li><strong>預期回應 (阿強)：</strong> 「我只是想和大家一樣，為什麼現在連呼吸都覺得困難？」</li>
+                    <li><strong>預期回應 (其他角色)：</strong> 「他怎麼把自己搞成這樣？」或「我該借錢給他嗎？」</li>
+                </ul>
+                <div
+                    style="background-color: #e8f4f8; border-left: 6px solid #03a9f4; padding: 15px; margin: 15px 0; border-radius: 4px;">
+                    <strong>💡 新手導引錦囊四：引導觀察與發現</strong>
+                    <p>思路追蹤的目的不是為了追求戲劇效果，而是要協助台下的觀察者（其他學生）進一步「欣賞」與「發現」角色隱藏的層次。當台上的同學說出獨白後，導師可以問台下：「你們聽到了什麼？這句話代表阿強現在最在意的是什麼？」引導學生看見數據背後人的脆弱。
+                    </p>
+                </div>
+                <p><strong>過渡：</strong> 導師解除定格（「請解除畫面，謝謝各位」），並拋出核心問題：「當阿強連呼吸都覺得困難時，他還剩下什麼選擇？」</p>
+
+                <h4>[00:50-00:65] 第 3 步：有限的出路與社會現實 (集體討論)</h4>
+                <p><strong>教學指導：</strong> 導師邀請全班同學回到座位，直接以集體討論的方式，探討阿強現在有什麼「出路」。當學生口頭發表想法後，導師應詢問其他學生的看法，並依據社會現實進行反問與補充。
+                </p>
+                <div style="background-color: #f7f9f9; border-left: 5px solid #2980b9; padding: 15px; margin: 15px 0;">
+                    <strong>💡 導師深度回應庫 (Nudge 技巧與現實分析)：</strong>
+                    <p>這不是自由分享，這是一場觀念的「壓力測試」：</p>
+                    <ul>
+                        <li><strong>學生說「瘋狂兼職 / 節衣縮食」：</strong> 「為了彌補每個月的赤字，他每天下班後要跑 4
+                            小時外送。當同齡人在進修、升職時，阿強的體力與精神正被無止盡的勞動消耗。這能持續多久？」</li>
+                        <li><strong>學生說「向父母坦白借錢」：</strong>
+                            「阿強的父母可能一生勤儉。當他們發現兒子因為買手機和球鞋欠下十幾萬，那種不信任感比金錢更沉重。而且父母真的有這筆錢嗎？」</li>
+                        <li><strong>學生說「借二線財務還清卡債」：</strong>
+                            「這叫『以債養債』。你以為解決了問題，其實下個月的利息會讓你連選擇破產的力氣都沒有。」</li>
+                    </ul>
+                </div>
+                <p><strong>深入探討 (宣告破產的迷思)：</strong> 討論到最後，導師引導或由學生提出「破產」這個選項，並進一步探討其代價。</p>
+                <div class="script-dialogue">
+                    「導師：剛才有人提到破產。大家覺得破產是否真的代表『不用還錢』？如果是這樣，是不是所有人都應該去借錢，亂花，然後破產？」
+                </div>
+                <ul>
+                    <li><strong>現實衝擊 (針對香港實況)：</strong> 待學生回應後，導師嚴肅地解釋破產等法律與社會後果：「破產不是不用還錢，而是將你的財務交給破產管理署監管。在接下來的四年甚至更久：
+                        1. 你不可搭乘計程車，不能有任何奢侈消費。
+                        2. 你的破產紀錄會被永遠留下。
+                        3. (加重語氣) 紀律部隊 (Police, Customs, Fire Services) 或金融行業的招聘有嚴格的誠信審查
+                        (Vetting)。有曾經破產的紀錄，代表你『容易受到金錢引誘』，錄取機會極微。破產影響的不止是金錢，更是你未來的職業與生活選擇權。」</li>
+                </ul>
+                <p><strong>結束語：</strong> 「先買後付機制容易讓人因為當下的消費衝動，而忽略長期的財務責任。接下來我們看看，當壓力到極點時，社會上還有什麼致命的誘惑等著他。」</p>
+
+                <h4>[00:65-00:75] 第 4 步：看似生機的陷阱 (防騙延伸討論)</h4>
+                <p><strong>教學指導：</strong>
+                    導師進一步引導學生思考，當阿強走投無路時，他可能會遇到哪些「看似能拯救他」的陷阱。在此部分，導師需展示「附件五：看似生機的陷阱（截圖集）」，並與學生探討這些選項的真實面貌。</p>
+                <div class="script-dialogue">
+                    「導師：剛才我們討論了兼職、借錢甚至破產。但在現實中，當阿強因為債務焦頭爛額時，他的手機突然收到了一則短訊（展示假客服截圖）。大家看看，這則標榜『債務清零』的官方訊息，對阿強來說是不是就像抓到了一根救命稻草？但這真的是生機嗎？除了這個，網上還有很多其他的『賺錢機會』，你們覺得阿強能靠這些翻身嗎？」
+                </div>
+                <div style="background-color: #f7f9f9; border-left: 5px solid #2980b9; padding: 15px; margin: 15px 0;">
+                    <strong>💡 導師深度回應庫 (拆解四大陷阱)：</strong>
+                    <ul>
+                        <li><strong>陷阱一：假客服（自稱能內部渠道處理貸款）：</strong>
+                            「這是『代辦貸款騙案』或『假冒職員騙案』。他們會利用你急於清還債務的心理，用虛假的釣魚連結套取你的個人資料去借更多的錢，或是騙取手續費。記住，正規財務機構不會有什麼『一鍵清零的特殊專案』。」
+                        </li>
+                        <li><strong>陷阱二：快錢（借出銀行戶口）：</strong>
+                            「這不是打工，這是『洗黑錢』。一旦借出戶口，無論你是否知情，都會面臨刑事檢控，最高刑罰是監禁14年及罰款500萬元。為賺幾千元，賠上人生，值得嗎？」</li>
+                        <li><strong>陷阱三：好賺兼職（落單助理 / 代付購買 / 刷單賺佣）：</strong>
+                            「這就是經典的『刷單騙案』。最初可能真的會給你微薄的佣金讓你嘗甜頭，然後要求你墊付越來越大的筆數。當你把僅存的積蓄甚至借來的錢投進去後，對方就會消失。」</li>
+                        <li><strong>陷阱四：投資平台（必賺 tips / 內幕消息）：</strong>
+                            「世上沒有『保證必賺』的投資。這些通常是『殺豬盤』或虛假投資App。你看到的獲利數字只是螢幕上的假象，當你想提現時，他們會要求你繳交各種手續費、保證金，把你榨乾。」</li>
+                    </ul>
+                </div>
+                <p><strong>總結語：</strong> 「人在絕望和焦慮時，判斷力最為薄弱。這些騙局正是利用了我們『想走捷徑』的脆弱心理。真正的出路，永遠是面對現實，尋求合法專業的債務重組協助。」</p>
+            </div>
+        </section>
+
+
+        <section id="phase4">
+            <h2>第四部份：迴聲與反思 <span class="time-badge">[10 min]</span></h2>
+
+            <div class="teacher-box">
+                <strong>導師行動摘要：</strong>
+                <ul>
+                    <li><strong>情境設定：</strong> 來到阿強 34 歲清還最後一筆債務的深夜。</li>
+                    <li><strong>核心習式：入角寫作 (Writing in Role)：</strong> 學生以阿強的身分撰寫一封信，寫給 24 歲（即十年前點下 Easy 版那天）的自己。</li>
+                    <li><strong>反思重點：</strong> 自由與責任，以及與過去的自己和解。</li>
+                </ul>
+            </div>
+
+            <div class="script-section">
+                <h4>[00:75-00:80] 第 1 步：時間的重量 (入角寫作)</h4>
+                <p><strong>活動引入：</strong> 導師引導全班從高壓的法庭情境中沉澱下來。</p>
+                <div class="script-dialogue">
+                    「導師：時間過得很快，也很慢。十年過去了。請大家閉上眼睛。現在，你是 34 歲的阿強。今晚，你終於把最後一筆債款還清了。從此刻起，你不再欠任何人一分錢。你終於找回了屬於自己的自由。
+                    請打開你們的面前的紙。以 34 歲阿強的身份，寫一封短訊給十年前，那個正準備按下『FuturePay Easy』按鈕的 24 歲的自己。」
+                </div>
+                <p><strong>寫作重點（導師可投影）：</strong></p>
+                <ol>
+                    <li>「這十年來，為了那種『立刻擁有』的感覺，我錯過了什麼？」</li>
+                    <li>「如果可以回到那一天，我會對那時候的手機廣告說什麼？」</li>
+                    <li>「現在我的月薪終於全部屬於我自己了，我的第一感覺是……」</li>
+                </ol>
+
+                <h4>[00:80-00:85] 第 2 步：時間的迴廊 (展示與閱讀)</h4>
+                <p><strong>教學指導：</strong> 導師引導學生完成寫作後，進行一個安靜的展示儀式。</p>
+                <div class="script-dialogue">
+                    「導師：大家寫完了嗎？現在，請把你們寫好的信件，輕輕放到教室正中央的地板上。我這裡，也放著你們在第二部份代表公司寫給阿強的那封拒絕信。」
+                </div>
+                <p><strong>活動執行：</strong> 導師將先前的拒絕信放在中央，學生們陸續將信件圍繞著拒絕信放好。導師邀請學生起立，給予 2-3
+                    分鐘的時間，讓他們在空間內緩慢步行，安靜地閱讀其他同學寫下的信件。這不僅是對角色的告別，也是看到了班上各種不同的反思。</p>
+
+                <h4>[00:85] 第 3 步：出戲與總結 (De-roling 去角色化)</h4>
+                <p><strong>教學指導：</strong> 閱讀結束後，導師請學生回到座位，進行去角色化 (De-roling) 儀式。</p>
+                <div class="script-dialogue">
+                    「導師：各位請回到座位。現在，拍拍自己的肩膀，告訴自己：『我不是阿強，我是 [你的真實名字]』。我們從故事中回來了，謝謝大家今天的參與。」
+                </div>
+
+                <div class="maister-note">
+                    <strong>🎓 Maister's Note: 理財教育作為公民覺醒</strong>
+                    <p>識破暗黑模式後，學生從被動的「消費者」轉變為主動的「理財者」。
+                        我們最終的目的不是教他們「省錢」，而是教他們如何守護自己的「自由權利」。財務獨立是公民尊嚴的基礎。</p>
+                </div>
+        </section>
+
+        <section id="phase5">
+            <h2>第五部份：解說與反思 (Debriefing) <span class="time-badge">[15 min]</span></h2>
+
+            <div class="teacher-box">
+                <strong>導師行動摘要：</strong>
+                <ul>
+                    <li><strong>暖身與讚賞：</strong> 協助學生從高壓角色中抽離，從「顧問」身份回歸，肯定他們的表現。</li>
+                    <li><strong>價值辯證：</strong> 探討借貸本質，引導學生建立成熟金錢觀。</li>
+                    <li><strong>系統分析：</strong> 揭示消費主義背後的運作機制與商人的真正目的。</li>
+                    <li><strong>個人責任：</strong> 引導學生明白最終的選擇權與責任在於自己。</li>
+                </ul>
+            </div>
+
+            <div class="script-section">
+                <h4>[00:85-00:88] 第 1 步：暖身與讚賞：從「顧問」身份回歸</h4>
+                <p><strong>導師指引：</strong> 先用輕鬆的語氣打破高壓的戲劇氛圍，並肯定學生的專業表現。</p>
+                <div class="script-dialogue">
+                    「輕鬆提問：剛才大家在扮演顧問和阿強時，心跳有加速嗎？哪一個瞬間讓你印象最深刻？」<br><br>
+                    「肯定觀察力：我想特別稱讚大家在第一部份對介面（UI）的分析。你們展現了極強的觀察力，能一眼看穿數字背後的陷阱。」<br><br>
+                    「職業連結：你們剛剛所做的，其實就是 UX (使用者體驗, User Experience) 與 UI (使用者介面, User Interface)
+                    設計師的工作。他們的任務是優化產品，讓用戶用得順手；但就像我們看到的，設計也能變成一種意圖，引導甚至操控人的行為。下次打開任何 App 時，不妨多留心：這個按鈕為什麼這麼大？為什麼這個數字被隱藏了？」
+                </div>
+
+                <h4>[00:88-00:92] 第 2 步：價值辯證：借貸的本質</h4>
+                <p><strong>導師指引：</strong> 修正「借錢就是壞事」的單一二元論，引導學生建立成熟的金錢觀。</p>
+                <div class="script-dialogue">
+                    「提問與延伸：你們覺得『借錢』本身是一件絕對負面的壞事嗎？」
+                </div>
+                <p><strong>並置對比：</strong></p>
+                <ul>
+                    <li><strong>生產型借貸：</strong> 例如「學費貸款」是投資未來，「房屋貸款」是建立家園。</li>
+                    <li><strong>消費型借貸：</strong> 例如教案中的「最新手機」、「限量球鞋」、「日本旅遊」。</li>
+                </ul>
+                <p><strong>核心思辨：</strong> 引領學生區分「想要 (Want)」與「需要 (Need)」。問學生：「阿強清單上的項目，有哪些是為了生存？哪些是為了填補內心的空虛？」</p>
+
+                <h4>[00:92-00:95] 第 3 步：系統分析：為什麼他們希望你借錢？</h4>
+                <p><strong>導師指引：</strong> 揭示「消費主義」的宏觀運作。</p>
+                <div class="script-dialogue">
+                    「提問：為什麼 FuturePay 要花這麼多錢聘請你們這些專業顧問，把介面做得那麼誘人？他們真正的目的是什麼？」
+                </div>
+                <p><strong>重點講解：</strong></p>
+                <ul>
+                    <li>借貸機構利用消費主義讓大眾相信「擁有即幸福」。</li>
+                    <li>他們賺取的不是手續費，而是你未來的時間與選擇權（利息與逾期費）。</li>
+                </ul>
+
+                <h4>[00:95-01:00] 第 4 步：誰該為阿強的生命負責？</h4>
+                <p><strong>導師指引：</strong>
+                    阿強的「不幸」經歷，到底誰要負責？核心是希望學生意識到，我們最終的生活經歷，其實是由我們去選擇，去負責。家人、朋友或者能夠在真正有需要時提供協助，但如何過我們的人生，我們才是最終要真正負責的人。
+                </p>
+            </div>
+        </section>
+
+        <section id="props">
+            <hr />
+            <h3>📂 附件材料參考庫</h3>
+
+            <div class="prop-container">
+                <div class="prop-label">附件一：FuturePay 舊式「先買後付」付款介面 (投影展示教材)</div>
+
+                <div
+                    style="border: 2px solid #555; background-color: #f2f2f2; padding: 20px; font-family: 'Times New Roman', Times, serif; color: #333; max-width: 600px; margin: 0 auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+                    <h2
+                        style="text-align: center; border-bottom: 2px solid #333; padding-bottom: 10px; margin-top: 0; font-size: 1.2rem; text-transform: uppercase;">
+                        FuturePay Installment Financing Application</h2>
+
+                    <div style="background-color: #fff; border: 1px solid #999; padding: 15px; margin-bottom: 20px;">
+                        <h3
+                            style="margin-top: 0; font-size: 1rem; border-bottom: 1px dotted #ccc; padding-bottom: 5px;">
+                            貸款資訊總覽表</h3>
+                        <table style="width: 100%; font-size: 0.9rem; border: none; margin-bottom: 0;">
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">商品：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>LPhone
+                                        限量未來版</strong></td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">商品現金價：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>$7,888</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">還款期：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>60個月
+                                        (5年)</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">每月還款額：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;">
+                                    <strong>$205.00</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">分期總還款：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;">
+                                    <strong>$12,300</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">年利率：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>18.9%</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">總利息支出：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>$4,412</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;">逾期罰款：</td>
+                                <td style="border: none; text-align: right; padding: 4px 0;"><strong>每次
+                                        $150</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none; border-top: 1px dashed #ccc;">
+                                <td style="border: none; padding: 8px 0 4px 0;"><strong>最終實際成本（如準時還款）：</strong></td>
+                                <td style="border: none; text-align: right; padding: 8px 0 4px 0;">
+                                    <strong>$12,300</strong>
+                                </td>
+                            </tr>
+                            <tr style="background: none;">
+                                <td style="border: none; padding: 4px 0;"><strong>最終實際成本（如兩次逾期）：</strong></td>
+                                <td style="border: none; text-align: right; padding: 4px 0; color: #a00;">
+                                    <strong>$12,600</strong>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div
+                        style="background-color: #fffbe6; border: 1px solid #ffe58f; padding: 10px; margin-bottom: 20px; font-size: 0.85rem; text-align: center; color: #856404;">
+                        <strong>⏱️ 審核提示：申請需要 5 個工作天來進行人工審查及背景調查。</strong>
+                    </div>
+
+
+                    <div
+                        style="background-color: #000; color: #fff; padding: 15px; margin-bottom: 20px; font-size: 0.85rem;">
+                        <ul style="margin: 0; padding-left: 20px;">
+                            <li style="margin-bottom: 5px;">此為貸款產品。</li>
+                            <li style="margin-bottom: 5px;">未按時還款將影響信貸評級。</li>
+                            <li style="margin-bottom: 5px;">本紀錄可能被未來僱主查閱。</li>
+                            <li>借貸前請評估還款能力。</li>
+                        </ul>
+                    </div>
+
+                    <div style="margin-bottom: 20px; font-size: 0.9rem;">
+                        <label style="display: block; margin-bottom: 8px; cursor: pointer;"><input type="checkbox"
+                                style="margin-right: 10px;"> 我已閱讀並理解所有條款</label>
+                        <label style="display: block; margin-bottom: 8px; cursor: pointer;"><input type="checkbox"
+                                style="margin-right: 10px;"> 我確認我有能力償還</label>
+                        <label style="display: block; cursor: pointer;"><input type="checkbox"
+                                style="margin-right: 10px;">
+                            我明白此為貸款而非折扣</label>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <button
+                            style="background-color: #ccc; border: 1px solid #999; padding: 10px 20px; font-size: 0.9rem; font-family: inherit; cursor: pointer;">Submit
+                            Financing Application</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="prop-container">
+                <div class="prop-label">附件二：FuturePay 當代「超輕便」版本 (誘惑版 UI)</div>
+
+                <div
+                    style="background: linear-gradient(135deg, #12c2e9, #c471ed, #f64f59); padding: 5px; border-radius: 30px; max-width: 350px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.2);">
+                    <div
+                        style="background-color: #1a1a1a; border-radius: 25px; padding: 25px; color: #fff; font-family: 'Inter', -apple-system, sans-serif;">
+
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                            <div style="font-weight: 900; font-size: 1.2rem; letter-spacing: -1px;">FuturePay <span
+                                    style="color: #f64f59; font-style: italic;">Easy</span></div>
+                            <div
+                                style="background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; color: #aaa;">
+                                ✨ 低負擔月供</div>
+                        </div>
+
+                        <div style="text-align: center; margin-bottom: 25px;">
+                            <div style="font-size: 0.8rem; color: #aaa; margin-bottom: 5px;">今日支付金額</div>
+                            <div style="font-size: 3rem; font-weight: 800; letter-spacing: -2px;">$0.00</div>
+                            <div style="font-size: 0.9rem; color: #2ecc71; font-weight: 600;">✓ 立即擁有，隨後付清</div>
+                        </div>
+
+                        <div
+                            style="background: rgba(255,255,255,0.05); border-radius: 15px; padding: 15px; margin-bottom: 20px;">
+                            <div style="text-align: center; margin-bottom: 10px; font-size: 0.8rem; color: #aaa;">
+                                LPhone
+                                限量未來版</div>
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 5px;">
+                                <span style="font-size: 0.9rem; font-weight: 500;">輕鬆分 60 期</span>
+                                <span style="font-size: 1rem; font-weight: 700; color: #12c2e9;">$205 / 月</span>
+                            </div>
+                            <div
+                                style="text-align: right; font-size: 0.75rem; color: #12c2e9; margin-bottom: 10px; font-weight: 600;">
+                                （每天只需不夠7元！）
+                            </div>
+
+                            <div style="display: flex; gap: 4px; margin-bottom: 10px;">
+                                <div style="height: 4px; flex: 1; background: #12c2e9; border-radius: 2px;"></div>
+                                <div
+                                    style="height: 4px; flex: 10; background: rgba(255,255,255,0.2); border-radius: 2px;">
+                                </div>
+                            </div>
+                            <div style="font-size: 0.7rem; color: #888;">第一期付款於 30 日後到期。無隱藏費用。**</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-bottom: 25px;">
+                        <div
+                            style="display: flex; align-items: center; margin-bottom: 10px; font-size: 0.8rem; color: #ddd;">
+                            <span style="margin-right: 10px;">⚡</span>
+                            <span>身份證一鍵審核，5 秒完成 (HKID/FaceID)</span>
+                        </div>
+                        <div style="display: flex; align-items: center; font-size: 0.8rem; color: #ddd;">
+                            <span style="margin-right: 10px;">🔥</span>
+                            <span>與 50,000+ 位用戶一起智慧消費！</span>
+                        </div>
+                    </div>
+
+                    <button
+                        style="width: 100%; background: #fff; color: #000; border: none; padding: 15px; border-radius: 15px; font-weight: 800; font-size: 1rem; cursor: pointer; transition: transform 0.2s;">
+                        確認並立即取得
+                    </button>
+
+                    <div
+                        style="text-align: center; margin-top: 15px; font-size: 0.6rem; color: #555; line-height: 1.2;">
+                        *受條款及細則約束。 **需遵守相關條款。請理性消費。<br>
+                        借定唔借？還得到先好借！
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <div class="prop-container">
+                <div class="prop-label">附件三：證物一 —— FuturePay 收到的客戶來信（節錄）</div>
+                <div class="official-letter" style="font-family: 'Kaiti', 'STKaiti', serif; line-height: 1.8;">
+                    <p>FuturePay 團隊：</p>
+                    <p>我是你們的用戶，已經四年。</p>
+                    <p>我想查詢，如果我現在一次過歸還所有「本金」，是否可以停止之後的利息與行政費？</p>
+                    <p>我並不是不打算還款。我只是發現自己每個月都在還，但總額一直沒有減少。現在我的每月還款已經超過我可以負擔的範圍。</p>
+                    <p>我仍然每天上班，但收入只是用來維持還款。我願意立即把本金還清，然後結束所有分期。求求你。</p>
+                    <p style="text-align: right;">阿強<br>FuturePay 用戶（第4年）</p>
+                </div>
+            </div>
+
+            <div class="prop-container">
+                <div class="prop-label">附件四：證物二 —— FuturePay 客戶帳單摘要（內部紀錄）</div>
+                <div class="evidence-card"
+                    style="font-family: 'Courier New', Courier, monospace; font-size: 0.85rem; border: 2px solid #333; padding: 20px; background: #fff; box-shadow: 5px 5px 0px #eee;">
+                    <h4 style="text-align: center; border-bottom: 2px solid #333; margin-top: 0; padding-bottom: 5px;">
+                        內部分析報告 –
+                        用戶 ID：AQ2022</h4>
+                    <div
+                        style="display: flex; justify-content: space-between; margin-bottom: 10px; border-bottom: 1px solid #ccc; padding-bottom: 5px;">
+                        <span>姓名：阿強</span>
+                        <span>年齡：24</span>
+                        <span>使用年期：4年</span>
+                    </div>
+
+                    <p style="background: #eee; padding: 2px 5px; font-weight: bold; margin-bottom: 5px;">[ 每月收支現狀 ]</p>
+                    <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+                        <tr style="background: none;">
+                            <td style="border: none; padding: 8px 0;">全職工作＋兼職收入：</td>
+                            <td style="border: none; text-align: right;"><strong>$15,500</strong></td>
+                        </tr>
+                        <tr style="background: none;">
+                            <td style="border: none; padding: 8px 0;">房租及基本生活開支：</td>
+                            <td style="border: none; text-align: right;">(約 $9,000)</td>
+                        </tr>
+                        <tr style="background: none;">
+                            <td style="border: none; padding: 8px 0;">FuturePay 每月供款總額：</td>
+                            <td style="border: none; text-align: right;">(約 $7,200)</td>
+                        </tr>
+                        <tr style="background: none; border-top: 1px double #333;">
+                            <td style="border: none; padding: 5px 0;"><strong>每月實際赤字：</strong></td>
+                            <td style="border: none; text-align: right; color: red;"><strong>-$700</strong></td>
+                        </tr>
+                    </table>
+
+                    <p style="background: #eee; padding: 2px 5px; font-weight: bold; margin-bottom: 5px;">[ FuturePay
+                        分期項目詳細
+                        ]
+                    </p>
+                    <table style="width: 100%; font-size: 0.8rem; border-collapse: collapse;">
+                        <tr style="border-bottom: 2px solid #333;">
+                            <th style="text-align: left; padding: 10px 0;">項目</th>
+                            <th style="text-align: right; padding: 10px 0;">總還款額</th>
+                            <th style="text-align: right; padding: 10px 0;">已還款</th>
+                            <th style="text-align: right; padding: 10px 0;">尚餘</th>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 0;">1. LPhone 限量未來版</td>
+                            <td style="text-align: right;">$12,300</td>
+                            <td style="text-align: right;">$9,840</td>
+                            <td style="text-align: right;">$2,460</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $7,888 | 尚餘
+                                12
+                                期 |
+                                系統註：已還金額超本金)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">2. 8K 超清螢幕及影音系統</td>
+                            <td style="text-align: right;">$30,600</td>
+                            <td style="text-align: right;">$13,600</td>
+                            <td style="text-align: right;">$17,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $20,000 |
+                                每月供款
+                                $850)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">3. 限量定製電競主機</td>
+                            <td style="text-align: right;">$28,800</td>
+                            <td style="text-align: right;">$14,400</td>
+                            <td style="text-align: right;">$14,400</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $22,000 |
+                                每月供款
+                                $1,200)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">4. 潮流限量球鞋及服飾包</td>
+                            <td style="text-align: right;">$22,680</td>
+                            <td style="text-align: right;">$11,340</td>
+                            <td style="text-align: right;">$11,340</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $15,000 |
+                                每月供款
+                                $945)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">5. 日本豪華七天遊分期</td>
+                            <td style="text-align: right;">$18,000</td>
+                            <td style="text-align: right;">$3,000</td>
+                            <td style="text-align: right;">$15,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $15,000 |
+                                每月供款
+                                $1,500)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">6. 健身會籍及私人教練課程</td>
+                            <td style="text-align: right;">$38,400</td>
+                            <td style="text-align: right;">$19,200</td>
+                            <td style="text-align: right;">$19,200</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $28,000 |
+                                每月供款
+                                $800)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">7. 年度高端美容護膚訂閱</td>
+                            <td style="text-align: right;">$18,000</td>
+                            <td style="text-align: right;">$8,000</td>
+                            <td style="text-align: right;">$10,000</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $14,000 |
+                                每月供款
+                                $1,000)</td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 10px 0;">8. 智能家居電器套裝</td>
+                            <td style="text-align: right;">$16,800</td>
+                            <td style="text-align: right;">$8,400</td>
+                            <td style="text-align: right;">$8,400</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 0.7rem; color: #666; padding-bottom: 5px;">(本金 $12,000 |
+                                每月供款
+                                $700)</td>
+                        </tr>
+                    </table>
+
+                    <div style="margin-top: 15px; border-top: 1px dashed #999; padding-top: 10px; font-size: 0.75rem;">
+                        <p style="margin: 0;"><strong>系統紀錄摘要：</strong></p>
+                        <ul style="margin: 5px 0; padding-left: 15px;">
+                            <li>4年前：從未使用任何借貸。自 Easy 推出後開始頻繁使用分期功能。</li>
+                            <li>目前同時進行分期項目：9 項。</li>
+                            <li><strong>系統診斷：</strong> 客戶所有分期項目均為正常還款中。但其每月供款總額已超過可支配收入，呈現結構性資不抵債。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prop-container">
+                <div class="prop-label">附件五：看似生機的陷阱（截圖集）</div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <!-- Scam 1 (Fake CS) -->
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; font-family: sans-serif;">
+                        <div
+                            style="background-color: #333; color: white; padding: 10px; font-weight: bold; font-size: 0.9rem;">
+                            🎧 (假) 貸款平台專員</div>
+                        <div style="background-color: #f1f1f1; padding: 15px; font-size: 0.85rem; min-height: 120px;">
+                            <div
+                                style="background-color: white; padding: 10px; border-radius: 8px; margin-bottom: 5px; display: inline-block; max-width: 90%;">
+                                [系統通知] FuturePay Easy 客服中心<br>
+                                「親愛的用戶阿強，我們注意到您的帳單近期出現還款壓力。<br>
+                                為了實踐企業社會責任，FuturePay Easy 現針對優質客戶推出 『Easy-Relief 債務舒緩專案』。<br>
+                                方案亮點： 利息減免 80%、還款期自動延長 36 個月。<br>
+                                操作簡便： 無需現身，只需點擊下方連結完成線上核身，即可一鍵將債務清零並重組。<br>
+                                👇 立即領取您的重生機會（有效期僅限 2 小時）：<br>
+                                <a href="#"
+                                    style="color: #03a9f4; word-break: break-all;">https://futurepay-easy.relief-hk.com/apply/auth_id=AQ2022</a>」
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scam 2 -->
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; font-family: sans-serif;">
+                        <div
+                            style="background-color: #075E54; color: white; padding: 10px; font-weight: bold; font-size: 0.9rem;">
+                            💬 WhatsApp: +852 9876 XXXX</div>
+                        <div style="background-color: #E5DDD5; padding: 15px; font-size: 0.85rem; min-height: 120px;">
+                            <div
+                                style="background-color: white; padding: 10px; border-radius: 8px; margin-bottom: 5px; display: inline-block; max-width: 90%;">
+                                「急需用錢？🚫免TU 🚫免入息證明<br>
+                                只需借出銀行戶口接收資金，即日出糧 $3000-$5000！🔥<br>
+                                絕對合法！有意PM。」
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scam 3 -->
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; font-family: sans-serif;">
+                        <div
+                            style="background-color: #0088cc; color: white; padding: 10px; font-weight: bold; font-size: 0.9rem;">
+                            ✈️ Telegram Job Group</div>
+                        <div style="background-color: #f4f4f4; padding: 15px; font-size: 0.85rem; min-height: 120px;">
+                            <div
+                                style="background-color: white; padding: 10px; border-radius: 8px; margin-bottom: 5px; display: inline-block; max-width: 90%;">
+                                「誠聘線上落單助理 🛍️<br>
+                                幫手喺網購平台代付刷銷量，每單回佣 10%！✅<br>
+                                零風險，用自己電話就做得。禁入黎登記 👉」
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scam 4 -->
+                    <div style="border: 1px solid #ddd; border-radius: 8px; overflow: hidden; font-family: sans-serif;">
+                        <div
+                            style="background-color: #F9A825; color: white; padding: 10px; font-weight: bold; font-size: 0.9rem;">
+                            📈 財富增值投資群組</div>
+                        <div
+                            style="background-color: #fffde7; padding: 15px; font-size: 0.85rem; min-height: 120px; border: 1px solid #fbc02d;">
+                            <div style="color: #333;">
+                                <strong style="color: #d32f2f;">🔥「獨家必賺 Tips」🔥</strong><br>
+                                「大戶即將炒起某加密幣！跟住我買，包你一星期內將本金翻倍！錯過後悔一世！📊🚀」
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+            <h2>📚 參考文獻 (部分節錄)</h2>
+            <div style="font-size: 0.9em; line-height: 1.8;">
+                <p style="padding-left: 2em; text-indent: -2em;">Dark patterns explained: how to spot and avoid
+                    deceptive UX
+                    - Finance Watch.</p>
+                <p style="padding-left: 2em; text-indent: -2em;">A Comprehensive Review of 先買後付 (Buy Now Pay Later /
+                    BNPL)
+                    Influence Factors on Young Consumer Spending Behaviour - RSIS International.</p>
+                <p style="padding-left: 2em; text-indent: -2em;">Process Drama: Taking a Walk in Someone Else's Shoes -
+                    The
+                    Kennedy Center.</p>
+                <p style="padding-left: 2em; text-indent: -2em;">金管局定性「先買後付」為無抵押私人貸款——「借定唔借？還得到先好借！」</p>
+            </div>
+        </section> <!-- End of reference -->
+        </section> <!-- End of props -->
+        </div> <!-- End of container -->
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動二：虹港 (Rainbow Port)</title>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+            color: #24292e;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #ffffff;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin-top: 24px;
+            margin-bottom: 16px;
+            font-weight: 600;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 2em;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 0.3em;
+        }
+
+        h3 {
+            font-size: 1.25em;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul,
+        ol {
+            padding-left: 2em;
+            margin-bottom: 16px;
+        }
+
+        blockquote {
+            padding: 0 1em;
+            color: #6a737d;
+            border-left: 0.25em solid #dfe2e5;
+            margin: 0 0 16px 0;
+        }
+
+        code {
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 85%;
+            background-color: rgba(27, 31, 35, 0.05);
+            border-radius: 3px;
+            font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+        }
+
+        pre {
+            padding: 16px;
+            overflow: auto;
+            font-size: 85%;
+            line-height: 1.45;
+            background-color: #f6f8fa;
+            border-radius: 3px;
+        }
+
+        pre code {
+            display: inline;
+            padding: 0;
+            margin: 0;
+            overflow: visible;
+            line-height: inherit;
+            word-wrap: normal;
+            background-color: transparent;
+            border: 0;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            display: block;
+            width: 100%;
+            width: -webkit-max-content;
+            width: -moz-max-content;
+            width: max-content;
+            max-width: 100%;
+            overflow: auto;
+            margin-bottom: 16px;
+        }
+
+        table th,
+        table td {
+            padding: 6px 13px;
+            border: 1px solid #dfe2e5;
+        }
+
+        table tr:nth-child(2n) {
+            background-color: #f6f8fa;
+        }
+
+        hr {
+            height: 0.25em;
+            padding: 0;
+            margin: 24px 0;
+            background-color: #e1e4e8;
+            border: 0;
+        }
+
+        .container {
+            border: 1px solid #e1e4e8;
+            padding: 40px;
+            border-radius: 6px;
+            background-color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .container {
+                padding: 20px;
+                border: none;
+            }
+        }
+
+        /* Attachments Styling */
+        .certificate {
+            border: 4px double #333;
+            padding: 40px;
+            background-color: #fffcf5;
+            font-family: "Georgia", "Times New Roman", serif;
+            text-align: center;
+            margin: 30px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .certificate-header {
+            font-size: 2.2em;
+            font-weight: bold;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .certificate-body {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .certificate-signature {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+            padding-top: 10px;
+        }
+
+        .sig-block {
+            border-top: 1px solid #333;
+            width: 40%;
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        .seal {
+            width: 100px;
+            height: 100px;
+            border: 2px solid #c0392b;
+            border-radius: 50%;
+            color: #c0392b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            transform: rotate(-15deg);
+            position: absolute;
+            bottom: 30px;
+            right: 45%;
+            opacity: 0.8;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .newspaper {
+            background-color: #fdfdfd;
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 30px 0;
+            font-family: "Times New Roman", serif;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .news-masthead {
+            border-bottom: 3px double #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .news-paper-name {
+            font-weight: 900;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            color: #555;
+        }
+
+        .news-date {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #777;
+        }
+
+        .news-headline {
+            font-size: 1.8em;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 10px 0;
+            color: #111;
+        }
+
+        .news-subhead {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .news-content {
+            column-count: 2;
+            column-gap: 30px;
+            column-rule: 1px solid #eee;
+            text-align: justify;
+            font-size: 1.05em;
+        }
+
+        .news-tag {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 0.8em;
+            text-transform: uppercase;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 600px) {
+            .news-content {
+                column-count: 1;
+            }
+        }
+
+        /* Pedagogical Note (Maister's Voice) */
+        .maister-note {
+            background-color: #f0f7fb;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            margin: 25px 0;
+            border-radius: 0 4px 4px 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+        }
+
+        .maister-note strong {
+            color: #2980b9;
+            font-size: 1.05em;
+        }
+
+        .maister-note em {
+            font-family: "Georgia", serif;
+            color: #555;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>教案：活動二：虹港 (Rainbow Port) —— 資源分配的極限倫理</h1>
+        <blockquote>
+            <p><strong>💡 導言：關於專家外衣 (Mantle of the Expert)</strong></p>
+            <p>本教案採用 Dorothy Heathcote 的「專家外衣」(Mantle of the Expert) 教學法 (Heathcote & Bolton,
+                1995)。在此模式中，教室被重新構想為一家專業機構，學生不再是學生，而是擁有權力與責任的「專家」。</p>
+            <p>
+            <div class="maister-note"><br />
+                <strong>🎓 Maister's Note: The Triad of MoE</strong>
+                <div style="margin: 5px 0;">專家外衣並非單純的角色扮演，它建立在三個支柱上：</div>
+                <ul style="margin: 0; padding-left: 20px;">
+                    <li><strong>客戶 (Client)</strong>：提供任務的人 (此處為虹港市民)。</li>
+                    <li><strong>權威 (Authority)</strong>：賦予學生解決問題的權力 (專員委任狀)。</li>
+                    <li><strong>責任 (Responsibility)</strong>：因為擁有權力，所以必須承擔後果 (需面對未來的時空跳躍)。</li>
+                </ul>
+                <div style="margin-top: 10px; margin-bottom: 0;"><em>「我們必須將孩子視為專家，直到他們真正成為專家。」 (Heathcote & Bolton,
+                        1995)</em></div><br />
+            </div>
+            </p>
+            <p><strong>給帶領者的關鍵提示 (Teacher's Note)</strong>：<br />
+                1. <strong>身分切換</strong>：你不再是「老師」，是與學生共事的「資深秘書」。請用對待成年同事的語氣對話。<br />
+                2. <strong>信念建立</strong>：慎重對待每一份文件與道具。若老師尊重這些物件的真實性，學生就會跟隨相信。<br />
+                3. <strong>避免說教</strong>：當觀點衝突時，用「反問」代替「糾正」。引導專家看見決策的後果，而非評判對錯。</p>
+        </blockquote>
+        <p><strong>活動背景</strong>：<br />
+            一年前，嚴重的海洋污染徹底摧毀了虹港的支柱漁業，導致城市財政收入跌至歷史谷底。儘管公眾已預見來年將陷入空前的生存困境，但資源匱乏的刀刃究竟會落在哪些群體身上，目前仍處於未知狀態。為此，虹港召開了最高級別的秘密財務會議，邀請各位專員針對極限資源的分配，進行最終的倫理與經濟裁定。
+        </p>
+        <p><strong>核心命題</strong>：<br />
+            探討當「保障當下的生命存續」與「投資未來的集體繁榮」這兩項共善價值產生衝突時，社會應如何排定優先順序。</p>
+        <p><strong>時間</strong>：70-75 分鐘</p>
+        <hr />
+        <h2>📅 戲劇活動結構</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="text-align: left;">時間</th>
+                    <th style="text-align: left;">活動階段</th>
+                    <th style="text-align: left;">核心重點</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: left;"><strong>00-10 min</strong></td>
+                    <td style="text-align: left;"><strong>1. 身分切入與法規確認</strong></td>
+                    <td style="text-align: left;">• 簽署《專員委任狀》。<br>• 秘書宣讀《財政法第一百零七條》，確立「量入為出」與「收支平衡」的最高準則。</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>10-43 min</strong></td>
+                    <td style="text-align: left;"><strong>2. 極限裁定：教育 vs. 醫療</strong></td>
+                    <td style="text-align: left;">• 分析三篇新聞報導（生存 vs. 未來）。<br>• 秘書挑戰：「若無盈餘，必刪其一」。<br>• 專家須依法親手劃掉其中 70%
+                        的預算。<br>• <strong>良心小巷 (Conscience Alley)</strong> (Neelands & Goode, 2015)：進行最終投票與良心裁定。</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>43-50 min</strong></td>
+                    <td style="text-align: left;"><strong>3. 時空跳躍：五年後的餘波</strong></td>
+                    <td style="text-align: left;">• 危機已過，專員重聚。<br>• 非正式閒聊當時決定的後果（例如：人才斷層或公共衛生崩潰），面對「後悔」或「堅持」的心理現實。</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left;"><strong>50-75 min</strong></td>
+                    <td style="text-align: left;"><strong>4. 五層次意義收束</strong></td>
+                    <td style="text-align: left;">• 脫下外衣，進行深層反思。<br>• 從「我們做了什麼」到「人類社會如何排定生存優先權」的本質討論。</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+        <h2>🛠️ 活動詳細設計</h2>
+        <h3>環境與道具</h3>
+        <ul>
+            <li><strong>環境</strong>：教室桌椅預先排成長方形會議桌。每位學生的位子上放著一份扣好的「文件夾」。</li>
+            <li><strong>道具</strong>：文件夾、計時器、公事包、委任狀、法律條文海報、投票名牌、大紙（投票用）。</li>
+        </ul>
+        <hr />
+        <h3>第一階段：身分切入與法規確認 (0-10 min)</h3>
+        <p><strong>目標</strong>：建立「財政審計專員」的專家身份，並確立不可違抗的法律限制。</p>
+        <h4>1. 入座與氛圍 (0-2 min)</h4>
+        <ul>
+            <li><strong>角色</strong>：老師入戲為「會議秘書」。表情嚴肅，手持計時器，低頭看錶。</li>
+            <li><strong>對白</strong>：「專員，請入座。這場秘密會議受《虹港財政保密協議》限制，請將非關辦公的物品收起。會議將在 1 分鐘後正式生效。」</li>
+        </ul>
+        <div class="maister-note">
+            <strong>🎭 Pedagogy: Framing (框架設定)</strong><br>
+            注意，老師在此處使用了「高位階」(High Status) 的秘書角色入戲。
+            這不是為了控制學生，而是為了<strong>提升學生的地位</strong>。
+            當你以嚴肅、專業的態度對待他們，你就是在傳遞一個訊號：「你們是重要的人，我們現在要做重要的事。」
+            這能迅速幫助學生從「嬉鬧的學生模式」切換到「負責任的專家模式」。
+        </div>
+
+        <h4>2. 簽署委任狀 (2-6 min)</h4>
+        <ul>
+            <li><strong>行動</strong>：請學生打開文件夾，閱讀第一頁的《專員委任狀》。</li>
+            <li><strong>對白</strong>：「根據《虹港行政法》，任何涉及資源重新分配的決策，必須由擁有最高審計權的專員親筆簽署確認。請各位閱讀條款，並在下方簽名。一旦簽署，你們的決策將具備最終法律效力，且不可撤銷。」
+            </li>
+            <li><strong>道具文本</strong>：<br />
+                &gt; <strong>《虹港財政委員會特別專員委任狀》</strong><br />
+                &gt; <strong>授權範圍</strong>：擁有對「年度預算分配」之最終否決權與裁斷權。<br />
+                &gt; <strong>責任聲明</strong>：本人理解並接受，我所做出的每一項預算削減，將直接影響虹港市民之生活品質甚至生存權利。本人願為此決策承擔行政與倫理責任。</li>
+        </ul>
+        <h4>3. 宣讀法律條文 (6-10 min)</h4>
+        <ul>
+            <li><strong>行動</strong>：秘書拿出一份蓋有印章的法律文件，懸掛起來，緩慢逐字宣讀。</li>
+            <li><strong>對白</strong>：「請銘記我們今天的底線。」</li>
+            <li><strong>道具文本</strong>：<br />
+                &gt; <strong>《虹港財政法》第一百零七條【預算平衡原則】</strong><br />
+                &gt; 1. 虹港之財政預算以「量入為出」為絕對原則。<br />
+                &gt; 2. 委員會必須力求收支平衡，嚴禁出現任何形式之預算赤字。<br />
+                &gt; 3. 收入不足時，<strong>必須削減現有支出</strong>。<br />
+                &gt; 4. 在資源極限匱乏時，最終決策由虹港財政委員決定。</li>
+        </ul>
+        <hr />
+        <h3>第二階段：極限裁定 —— 教育 vs. 醫療 (10-43 min)</h3>
+        <p><strong>目標</strong>：在資源不足的壓力下，迫使學生面對「生存」與「發展」的兩難。</p>
+        <h4>A. 背景核對 (10-20 min)</h4>
+        <ol>
+            <li><strong>分發背景文件 (10-12 min)</strong>：<ul>
+                    <li><strong>對白</strong>：「專員，請注意。在進入任何裁定前，委員會必須完成財政現況核對程序。現在分發的是『背景文件』。目前只需處理文件本身所揭示的風險與虹港目前面對的財政壓力。」
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>分組觀察 (12-17 min)</strong>：</p>
+                <ul>
+                    <li>學生3-4人一組。</li>
+                    <li><strong>任務</strong>：閱讀三份資料，填寫工作指引：(1) 觀察到的事實與趨勢 (2) 面臨的風險。</li>
+                </ul>
+                <p>
+                <div class="maister-note"><br />
+                    <strong>📄 Pedagogy: Materiality (物質性) &amp; Sign-making</strong><br><br />
+                    為什麼要準備精美的報紙和委任狀？<br />
+                    在 MoE 中，物品不是道具，是<strong>「符號」(Signs)</strong>。真實的質感能召喚出真實的態度。<br />
+                    當學生觸摸到有質感的紙張，看到蓋有印章的文件，他們會感受到任務的嚴肅性。<br />
+                    這就是 Heathcote 所說的：「把物品變得重要，人就會變得重要。」<br />
+                </div>
+                </p>
+                <ul>
+                    <li><strong>資料重點</strong>：<ul>
+                            <li><em>資料一</em>：收入過度依賴第一產業 (62%)，轉型資金需 4,100 萬。</li>
+                            <li><em>資料二</em>：海洋污染重創漁業，轉型迫在眉睫。</li>
+                            <li><em>資料三</em>：人口老化，需 4,500 萬建老人醫院；否則長者壽命縮短 3-5 年。</li>
+                        </ul>
+                    </li>
+                    <li><strong>匯報 (17-20 min)</strong>：每組 30 秒，報告一個關鍵觀察與一個核心問題。</li>
+                </ul>
+            </li>
+        </ol>
+        <h4>B. 鎖定選項 (21-25 min)</h4>
+        <ul>
+            <li><strong>秘書總結</strong>：「綜合各位觀察，我們確認了三項事實：(1) 收入單一且受創；(2) 人口老化結構性壓力；(3)
+                財政缺口巨大。根據法律條文『收入不足時，必須削減現有支出』，我們必須裁定。」</li>
+            <li><strong>二選一困境</strong>：<ul>
+                    <li><strong>選項 A</strong>：產業轉型投資 (約 4,100 萬) —— <strong>投資未來</strong></li>
+                    <li><strong>選項 B</strong>：長者醫療建設計劃 (約 4,500 萬) —— <strong>保障當下</strong></li>
+                </ul>
+            </li>
+            <li><strong>對白</strong>：「其餘開支均屬法定鎖定。我們只能二選一：投資未來並承擔短期陣痛，或維持醫療並延後轉型。兩者無法共存。」</li>
+        </ul>
+        <h4>C. 專業討論與介入 (25-35 min)</h4>
+        <ul>
+            <li>學生進行 10 分鐘討論。</li>
+            <li><strong>秘書專業介入策略</strong>：<ul>
+                    <li><em>若偏向保醫院 (溫情主義)</em> -&gt; 「如果五年後城市破產，醫院的電費藥費誰付？我們是在救人，還是在粉飾太平？」</li>
+                    <li><em>若偏向保轉型 (理性冷酷)</em> -&gt; 「這意味著我們決定犧牲這一代長者 3-5 年的壽命來換取未來。這是我們想要的社會契約嗎？如何面對那些建設過城市的長者？」</li>
+                    <li><em>若想各削一半 (逃避選擇)</em> -&gt; 「轉型資金少於四千萬無法啟動；醫院蓋一半無法醫人。各削一半等於雙輸。法規要求『最終裁定』，不是妥協。」</li>
+                </ul>
+            </li>
+        </ul>
+        <div class="maister-note">
+            <strong>🌍 Pedagogy: Dropping to the Universal (普世價值)</strong><br>
+            老師的介入不應停留在「錢」的層面，而要提升到「價值觀」的層次。
+            不要問「這筆錢夠不夠？」，要問「我們是誰？我們想成為什麼樣的社會？」
+            這種技巧稱為 Dropping to the Universal，將具體的財務問題連結到人類共同的生存難題。
+        </div>
+
+        <h4>D. 最終裁決 (35-43 min)</h4>
+        <ol>
+            <li><strong>嘗試共識 (35-37 min)</strong>：詢問是否能達成全體一致（通常很難）。</li>
+            <li><strong>記名投票 (37-40 min)</strong>：<ul>
+                    <li>黑板分左右兩區：「啟動轉型，凍結醫療」 vs. 「保留醫療，凍結轉型」。</li>
+                    <li>專員逐一上前貼上名牌。</li>
+                </ul>
+            </li>
+            <li><strong>良心裁定 (若持平) —— 習式：良心小巷 (Conscience Alley)</strong>：<ul>
+                    <li><strong>情境</strong>：若票數持平，隨機抽出一名「良心專員」代表眾人做決定。</li>
+                    <li><strong>運作方式</strong>：全體專員面對面排成兩行，形成一條小巷。左側代表「投資未來」，右側代表「保障當下」。</li>
+                    <li><strong>行動</strong>：良心專員緩步走過兩行人中間的小巷。每當經過一對專員時，兩側的專員須分別對其耳語或說出一句具說服力的話（例如：「想想那些還在病床上的老人！」對抗「想想五年後空無一人的城市！」），試圖影響其決定。
+                    </li>
+                    <li><strong>最終裁決</strong>：專員走完小巷，獨自走向大紙做出最終裁決。</li>
+                </ul>
+            </li>
+        </ol>
+        <div class="maister-note">
+            <strong>🧠 Pedagogy: Externalizing Internal Conflict (內在衝突具象化)</strong><br>
+            良心小巷 (Conscience Alley) 是一個將內心掙扎「外顯化」的習式。
+            這不是辯論比賽，而是讓決策者「具身地」(Embodied) 感受兩種價值的拉扯。
+            當良心專員走過這條巷子，他聽到的不再是聲音，而是社會的集體焦慮。
+        </div>
+        <ol>
+            <li><strong>宣判 (40-43 min)</strong>：「我代表財政裁定委員會，裁定......」</li>
+        </ol>
+        <hr />
+        <h3>第三階段：五年後的餘波 (43-50 min)</h3>
+        <p><strong>目標</strong>：透過時間跳躍，讓學生在無壓力的狀態下回望當初決定的後果。</p>
+        <ul>
+            <li><strong>場景轉換</strong>：語氣轉為平實，帶有歲月感。</li>
+            <li><strong>對白</strong>：「現在是 2031
+                年。虹港的海洋污染問題已經解決了。大家早就離開了委員會。今天，我們只是在舊址旁的咖啡店喝杯咖啡。沒有會議，沒有裁定權。我們只是曾經一起做過那個決定的人。」</li>
+        </ul>
+        <p><strong>情境分支 (根據剛才的選擇)</strong>：<br />
+            * <strong>若當年選了「轉型 (科技城市)」</strong>：<br />
+            * 「虹港真的變成了科技城市，年輕人回來了，報紙讚頌轉型成功。只是...去年幾位老鄰居走得很匆忙。醫療資源這幾年一直很緊。有時候我會想，那是不是我們早就知道的代價？」<br />
+            * <strong>若當年選了「醫院 (醫療保障)」</strong>：<br />
+            * 「醫院蓋好了，長者走得很安詳。但在這五年，這種安穩的代價是由年輕一代償還的。他們失去了轉型的機會，被迫離鄉背井。這座城市變老了，也變靜了。」</p>
+        <hr />
+        <h3>第四階段：五層次意義收束 (50-75 min)</h3>
+        <p><strong>目標</strong>：去角色化 (De-role)，從體驗中提煉出普世意義。</p>
+        <ol>
+            <li>
+                <p><strong>去角色 (50-52 min)</strong>：</p>
+                <ul>
+                    <li>「請大家正式離開『虹港』。剛才的感受屬於角色，不屬於你個人。現在我們回到教室。」</li>
+                    <li>輕鬆提問：「大家現在感覺如何？」</li>
+                </ul>
+            </li>
+            <li>
+                <p><strong>層層反思 (52-75 min)</strong>：</p>
+                <p>
+                <div class="maister-note"><br />
+                    <strong>🧠 Pedagogy: De-rolling &amp; Reflection</strong><br />
+                    反思不是「答題」，而是「意義的建構」。請確保學生已經「去角色」(De-role)，以外部觀察者的身份發言。<br />
+                    若是討論停滯，可以使用「並置技巧」(Juxtaposition)：將「當年的決定」與「今日的結果」放在一起看。<br />
+                </div>
+                </p>
+                <ul>
+                    <li>
+                        <p><strong>第一層：行動 (Action) —— 回溯事實</strong></p>
+                        <ul>
+                            <li><strong>提問指引</strong>：「我們剛才具體做了什麼動作？」(簽名、看數據、爭論、貼名牌)。</li>
+                            <li><strong>微觀聚焦</strong>：「當你拿起那張紅色名牌時，它感覺重嗎？你猶豫了多久？」</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>第二層：動機 (Motivation) —— 結構性限制</strong></p>
+                        <ul>
+                            <li><strong>核心提問</strong>：「為什麼不得不選？為什麼不能兩者共存？」</li>
+                            <li><strong>討論點</strong>：引導學生看見「資源有限性」與「制度約束」。「是誰規定不能赤字？是那條法規。法規保護了財政，但犧牲了什麼？」</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>第三層：價值 (Values) —— 兩難的本質</strong></p>
+                        <ul>
+                            <li><strong>核心提問</strong>：「刚才的衝突，本質上是哪兩種價值的對抗？」</li>
+                            <li><strong>概念引入</strong>：<ul>
+                                    <li><strong>效益主義 (Utilitarianism)</strong>：為了最大多數人的長遠利益 (投資未來)。</li>
+                                    <li><strong>義務論 (Deontology)</strong>：我們有照顧弱者的絕對道德義務 (保障當下)。</li>
+                                </ul>
+                            </li>
+                            <li><strong>個人連結</strong>：「在投票的那一刻，你心中浮現了誰的臉？是未來的孩子，還是現在的祖父母？」</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>第四層：象徵 (Symbol) —— 連結真實 (香港)</strong></p>
+                        <ul>
+                            <li><strong>關鍵提問</strong>：「『虹港』(Rainbow Port) 讓你想起了哪個真實的城市？」</li>
+                            <li><strong>深度連結 (Hong Kong Context)</strong>：<ul>
+                                    <li><strong>單一產業風險</strong>：虹港的漁業 vs. 香港的金融/地產。當支柱動搖時，我們有轉型的準備嗎？</li>
+                                    <li><strong>人口老化</strong>：香港正面臨「銀髮海嘯」。醫療與安老院舍的資源短缺，是否也是一種隱形的「極限裁定」？</li>
+                                    <li><strong>土地與資源爭議</strong>：郊野公園 vs. 建屋；明日大嶼 vs. 民生福利。這不都是「未來願景」與「當下犧牲」的博弈嗎？</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>第五層：普遍意義 (Universal Reflection) —— 公民責任</strong></p>
+                        <ul>
+                            <li><strong>終極提問</strong>：「在現實世界中，當資源不足以拯救所有人時，一個文明社會究竟應該如何排定順序？」</li>
+                            <li><strong>賦權 (Empowerment)</strong>：「誰有權力決定？是專家、是大數據，還是每一個像你們這樣的公民？我們今天學到了什麼關於『責任』的真相？」
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p><br></p>
+        <div class="maister-note">
+            <strong>🎭 Maister's Final Note: 戲劇教育的美學與彈性</strong><br>
+            Dorothy Heathcote 曾說：「戲劇是處於困境中的人 (Drama is a man in a mess)。」<br>
+            戲劇教育的美學，不在於學生演得有多好，而在於他們在面對困境時，被激發出的<strong>思維品質 (Quality of Thought)</strong>。
+            <br><br>
+            <strong>給帶領者的宏觀建議</strong>：<br>
+            本教案是一張地圖，而不是一條必須嚴格執行的修路軌。目的不在於「完美執行」每一個環節，而在於<strong>「逼使學生思考」</strong>。
+            <ul>
+                <li><strong>關於彈性</strong>：請根據學生的程度調整難度。如果學生覺得太容易，給他們製造更多難題（例如：「醫院的主要捐款人突然撤資了」）。如果學生卡住了，簡化選項，甚至由老師入戲協助梳理。
+                </li>
+                <li><strong>關於目標</strong>：你的任務不是教導標準答案，而是創造一個安全的空間，讓學生在兩難中反覆掙扎，最終在思維上「流一身汗」。唯有經過這種掙扎，價值觀的討論才會變得真實。</li>
+            </ul>
+        </div>
+
+        <hr />
+        <h3>📂 附件：(可供列印的完整文件)</h3>
+        <p><br></p>
+        <div class="certificate">
+            <div class="certificate-header">專員委任狀</div>
+            <div class="certificate-body">
+                <p><strong>【虹港財政部】</strong></p>
+                <p>鑑於虹港正面臨前所未有之財政緊縮期，根據《虹港緊急緊急應變條例》，特委任以下人員組成「最高財政裁定委員會」：</p>
+                <p><strong>授權範圍</strong>：<br>
+                    1. 本委員會擁有對「年度預算分配」之最終否決權與裁斷權。<br>
+                    2. 專員之決定應超越個人情感，以「理據」為最高指導原則。<br>
+                    3. 專員須對會議內容絕對保密，直至決策正式公佈。</p>
+                <p><strong>責任聲明</strong>：<br>
+                    本人理解並接受，我所做出的每一項預算削減，將直接影響虹港市民之生活品質甚至生存權利。本人願為此決策承擔行政與倫理責任。</p>
+            </div>
+            <div class="certificate-signature">
+                <div class="sig-block">
+                    <p><strong>專員姓名（請以正楷簽署）</strong></p>
+                </div>
+                <div class="sig-block">
+                    <p><strong>2026 年 ____ 月 ____ 日</strong></p>
+                </div>
+            </div>
+            <div class="seal">
+                財政部<br>OFFICIAL<br>SEAL
+            </div>
+        </div>
+
+        <p><br></p>
+        <h4>附件二：《虹港財政法》節錄</h4>
+        <div class="newspaper" style="text-align: center; border: 3px solid #000;">
+            <h3>《虹港財政法》第一百零七條</h3>
+            <h1>【預算平衡原則】</h1>
+            <div style="text-align: left; margin: 20px; font-size: 1.2em;">
+                <p>1. 虹港之財政預算以<b>「量入為出」</b>為絕對原則。</p>
+                <p>2. 委員會必須力求收支平衡，嚴禁出現任何形式之預算赤字。</p>
+                <p>3. 收入不足時，必須削減現有支出。</p>
+                <p>4. 在資源極限匱乏時，最終決策由虹港財政委員決定。</p>
+            </div>
+        </div>
+
+        <p><br></p>
+        <h4>附件三：背景文件組 (資料一至三)</h4>
+        <div class="newspaper">
+            <div class="news-masthead">
+                <div class="news-paper-name">Rainbow Post | 虹港日報</div>
+                <div class="news-date">2026年2月1日 | 第 10248 號</div>
+            </div>
+            <div class="news-headline">2026/27 年度收入預算出爐：第一產業仍佔六成以上</div>
+            <div class="news-subhead">財政部示警：結構單一 抗風險能力堪憂</div>
+            <div class="news-content">
+                <p><span class="news-tag">財經版</span> 虹港政府昨日公布 2026/27
+                    年度收入預算概要。根據財政部提交予立法委員會的文件，虹港目前的整體收入結構仍然高度集中於第一產業（漁業及相關加工、出口）。</p>
+                <p><b>📊 收入來源比例（2026/27）</b><br>
+                    • 第一產業（漁業城市核心產業）：62%<br>
+                    • 第二產業（加工、基礎製造）：28%<br>
+                    • 第三產業（服務及其他）：10%</p>
+                <p>文件指出，這種高度集中的產業結構，在經濟平穩時有助維持效率，但在面對突發環境或市場衝擊時，抗風險能力有限。</p>
+                <p>財政部同時披露，為減低長遠結構風險，政府已預留 <b>「轉型資金（投資未來）」共 4,100
+                        萬元</b>，用於推動科技相關產業及新型經濟活動，包括興建一所科技大學。然而，相關資金的實際回報期預計較長，短期內難以直接補貼年度現金流。</p>
+            </div>
+        </div>
+
+        <div class="newspaper">
+            <div class="news-masthead">
+                <div class="news-paper-name">Economic Observer | 虹港經濟觀察</div>
+                <div class="news-date">專題評論</div>
+            </div>
+            <div class="news-headline">海洋污染後遺未消：轉型已非選項，而是時間問題</div>
+            <div class="news-content">
+                <p>去年發生的嚴重海洋污染事故，對虹港以漁業為核心的經濟結構造成深遠影響。儘管部分捕撈活動已逐步恢復，但多項數據顯示，2026/27 年度整體收入仍然受到明顯衝擊。</p>
+                <p>多名經濟學者指出，事件再次暴露虹港「過度依賴單一產業」的長期風險。當第一產業同時承受環境、氣候及市場多重不確定性時，整個城市的收入基礎亦隨之動搖。</p>
+                <p>一名長期研究沿海城市經濟的學者表示：「問題不只是污染本身，而是虹港缺乏可即時替代的收入來源。當第一產業受創，其他產業不足以支撐整體財政，城市便會進入高度脆弱狀態。」</p>
+                <p>學者普遍認為，產業轉型並非一朝一夕之事，且需要前期大量投資。但若延遲行動，未來每一次衝擊都可能帶來更高成本。</p>
+            </div>
+        </div>
+
+        <div class="newspaper">
+            <div class="news-masthead">
+                <div class="news-paper-name">The Evening News | 虹港晚報</div>
+                <div class="news-date">民生頭條</div>
+            </div>
+            <div class="news-headline">政府原定撥款 4,500 萬興建老人醫院 前景存變數</div>
+            <div class="news-subhead">學者警告：若計畫暫停，長者預期壽命恐縮短 3-5 年</div>
+            <div class="news-content">
+                <p>最新人口研究顯示，虹港正以高於原先估算的速度邁向高齡社會。報告指出，未來數年內，勞動人口比例將持續下降，而長者人口將快速上升，城市對醫療及長期照顧服務的需求亦隨之增加。</p>
+                <p>因應相關趨勢，虹港政府去年已完成規劃，原定於本年度<b>撥款 4,500
+                        萬元</b>，興建一所專門服務長者的醫院，以應付未來醫療壓力。然而，隨著來年預期收入下降，部分聲音開始呼籲重新檢視項目時間表，甚至建議延後或暫停相關建設。</p>
+                <p>不過，多名公共衛生及社會政策學者警告，若未能按計劃增加長者醫療容量，後果將不僅是服務緊張。研究指出，在醫療資源不足的情況下，<b>虹港長者的預期壽命可能縮短約 3 至 5
+                        年</b>，相關影響將在未來逐步浮現。</p>
+                <p>亦有學者提醒，人口老化不應被簡化為單純的「財政負擔」問題。</p>
+            </div>
+        </div>
+
+        <p><br></p>
+        <h4>附件四：工作指引 (小組討論用)</h4>
+        <table style="width: 100%; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th
+                        style="width: 30%; text-align: left; padding: 10px; border: 1px solid #dfe2e5; background-color: #f6f8fa;">
+                        觀察項目</th>
+                    <th
+                        style="width: 70%; text-align: left; padding: 10px; border: 1px solid #dfe2e5; background-color: #f6f8fa;">
+                        內容填寫</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding: 15px; border: 1px solid #dfe2e5; vertical-align: top;">
+                        <strong>我們觀察到的事實與趨勢</strong>
+                    </td>
+                    <td style="padding: 15px; border: 1px solid #dfe2e5; height: 150px; vertical-align: top;">
+                        1. <br><br><br>
+                        2. <br><br><br>
+                        3.
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding: 15px; border: 1px solid #dfe2e5; vertical-align: top;">
+                        <strong>這些事實代表我們面臨哪些風險</strong>
+                    </td>
+                    <td style="padding: 15px; border: 1px solid #dfe2e5; height: 150px; vertical-align: top;">
+                        1. <br><br><br>
+                        2. <br><br><br>
+                        3.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <hr />
+        <h2>📚 參考文獻 (References)</h2>
+        <div style="font-size: 0.9em; line-height: 1.8;">
+            <p style="padding-left: 2em; text-indent: -2em;">Heathcote, D., & Bolton, G. (1995). <i>Drama for learning:
+                    Dorothy Heathcote's mantle of the expert approach to education</i>. Heinemann.</p>
+            <p style="padding-left: 2em; text-indent: -2em;">Neelands, J., & Goode, T. (2015). <i>Structuring drama
+                    work</i> (3rd ed.). Cambridge University Press.</p>
+        </div>
+    </div>
+</body>
+
+</html>

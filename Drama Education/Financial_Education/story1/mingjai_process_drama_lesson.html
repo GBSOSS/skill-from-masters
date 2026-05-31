@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>活動一：英雄的代價</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height: 1.6;
+      color: #24292e;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background-color: #ffffff;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 24px;
+      margin-bottom: 16px;
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: 2em;
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 0.3em;
+    }
+
+    h2 {
+      font-size: 1.5em;
+      border-bottom: 1px solid #eaecef;
+      padding-bottom: 0.3em;
+    }
+
+    h3 {
+      font-size: 1.25em;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 16px;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul,
+    ol {
+      padding-left: 2em;
+      margin-bottom: 16px;
+    }
+
+    blockquote {
+      padding: 0 1em;
+      color: #6a737d;
+      border-left: 0.25em solid #dfe2e5;
+      margin: 0 0 16px 0;
+    }
+
+    code {
+      padding: 0.2em 0.4em;
+      margin: 0;
+      font-size: 85%;
+      background-color: rgba(27, 31, 35, 0.05);
+      border-radius: 3px;
+      font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    pre {
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f6f8fa;
+      border-radius: 3px;
+    }
+
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+      display: block;
+      width: 100%;
+      width: max-content;
+      max-width: 100%;
+      overflow: auto;
+      margin-bottom: 16px;
+    }
+
+    table th,
+    table td {
+      padding: 6px 13px;
+      border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f6f8fa;
+    }
+
+    hr {
+      height: 0.25em;
+      padding: 0;
+      margin: 24px 0;
+      background-color: #e1e4e8;
+      border: 0;
+    }
+
+    .container {
+      border: 1px solid #e1e4e8;
+      padding: 40px;
+      border-radius: 6px;
+      background-color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px 15px;
+      }
+
+      .container {
+        padding: 20px;
+        border: none;
+      }
+    }
+
+    /* Pedagogical Note (Maister's Voice) */
+    .maister-note {
+      background-color: #f0f7fb;
+      border-left: 5px solid #3498db;
+      padding: 15px 20px;
+      margin: 25px 0;
+      border-radius: 0 4px 4px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: #2c3e50;
+    }
+
+    .maister-note strong {
+      color: #2980b9;
+      font-size: 1.05em;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .maister-note em {
+      font-family: "Georgia", serif;
+      color: #555;
+    }
+
+    /* Evidence & Prop Styling */
+    .prop-container {
+      border: 1px dashed #aaa;
+      padding: 20px;
+      background-color: #fffcf5;
+      margin: 30px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      position: relative;
+    }
+
+    .prop-label {
+      position: absolute;
+      top: -10px;
+      left: 20px;
+      background: #fff;
+      padding: 0 10px;
+      font-weight: bold;
+      color: #7f8c8d;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    }
+
+    .evidence-card {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .official-letter {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      padding: 30px;
+      border: 1px solid #000;
+      background: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>教案一：英雄的代價 —— 沈浸式消費心理探索</h1>
+    <blockquote>
+      <p><strong>💡 導言：什麼是過程劇 (Process Drama)？</strong></p>
+      <p>這堂課不是為了演出，而是為了「經歷」。我們運用過程劇 (Process Drama) 的理論 (O'Neill,
+        1995)，將理財教育從教科書搬進一個活生生的虛構世界。學生不只是在討論金錢，是在一個安全的戲劇空間裡，直接面對消費背後的誘惑、焦慮與後果。</p>
+
+      <div class="maister-note">
+        <strong>🎓 Maister's Note: 過程劇的核心動能</strong>
+        <ul>
+          <li><strong>前文本：</strong> 故事不從頭講起。我們丟出明仔的帳單和訊息碎片，讓學生像撿拾拼圖一樣，靠直覺和推論去「發明」這個人。當學生開始猜測，參與感就產生了。</li>
+          <li><strong>距離感：</strong> 討論自己的錢包很尷尬，但討論「明仔」的帳單卻很安全。這層虛構的濾鏡讓學生能放開身分，更誠實地剖析那些難以啟齒的消費慾望。</li>
+        </ul>
+      </div>
+
+      <p><strong>給帶領者的關鍵提示 (Teacher's Note)</strong>：<br />
+        1. <strong>捕捉「當下」的火花</strong>：老師不需要嚴格執行劇本，而要像偵探一樣觀察學生。深入挖掘那個情緒，不要急著推動進度。<br />
+        2. <strong>與學生一同探索</strong>：你不需要扮演「全知的導師」。讓學生在應對「當下」的危機中，自己生長出解決問題的理財智慧。<br />
+        3. <strong>物件與身體的重量</strong>：每一份道具（帳單、簡訊）都是進入戲劇的入口。當你鄭重地遞出一份文件，學生也會感受到那份重量。</p>
+    </blockquote>
+
+    <p><strong>活動背景</strong>：<br />
+      大學生「明仔」深陷手遊課金陷阱，在一場突如其來的帳單危機中，他必須面對家庭、社交與虛擬世界的重重壓力。本教案引導學生從數碼足跡中拼湊真相，探索金錢與自我價值的關係。</p>
+    <p><strong>核心命題</strong>：<br />
+      探討「消費」如何被心理誘惑與社交需要所驅動，並練習在數碼時代守住財務責任與自我價值。</p>
+    <p><strong>對象：</strong> 中一至中三 (12-15 歲)<br>
+      <strong>時間：</strong> 75-90 分鐘<br>
+      <strong>關鍵概念：</strong> 延遲滿足、身分認同、理財教育<br>
+      <strong>戲劇習式：</strong> 過程劇 (Process Drama; O'Neill, 1995)、專家外衣 (Mantle of the Expert; Heathcote & Bolton, 1995)
+    </p>
+
+
+
+    <hr />
+    <h2>🎯 學習目標</h2>
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 50%;">🎭 戲劇學習</th>
+          <th>💰 理財知識</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <ul>
+              <li>體認<strong>牆上的角色 (Role on the Wall)</strong> 如何建構人物的內在動機 (Neelands & Goode, 2015)。</li>
+              <li>運用<strong>定格畫面 (Still Image)</strong> 壓縮與並置時間，理解行為的長期後果 (Neelands & Goode, 2015)。</li>
+              <li>在<strong>專家會議</strong>中切換身分，練習以專業視角解決複雜問題 (Heathcote & Bolton, 1995)。</li>
+            </ul>
+          </td>
+          <td>
+            <ul>
+              <li><strong>辨析慾望：</strong> 分辨「想要」與「需要」，識別微交易如何利用衝動性消費機制誘導支出。</li>
+              <li><strong>信貸本質：</strong> 理解信貸是向未來的自己借錢，並思考現在必須承擔的還款責任。</li>
+              <li><strong>消費與自我認知：</strong> 反思消費與身分的連結——我們付出的金錢，究竟是為了買物品本身，還是為了換取一份虛擬的自我認同？</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+    <h2>📅 戲劇活動結構</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th width="15%">階段</th>
+          <th width="25%">戲劇習式 (Convention)</th>
+          <th>活動內容與目標</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>1. 暖身與引入<br>0-15 分鐘</strong></td>
+          <td><strong>前文本<br>牆上的角色</strong></td>
+          <td>
+            <strong>建立虛構世界</strong><br>
+            分析「明仔」的數碼足跡（帳單、訊息），建構人物輪廓。從客觀證據推論主觀動機。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>2. 發展<br>15-27 分鐘</strong></td>
+          <td><strong>時間折疊<br>定格畫面</strong></td>
+          <td>
+            <strong>具身化體驗</strong><br>
+            同時呈現「第一次消費」、「沈迷當下」與「收到帳單」三個時刻。看見行為的連鎖反應。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>3. 高潮<br>27-37 分鐘</strong></td>
+          <td><strong>熱座<br>教師入戲</strong></td>
+          <td>
+            <strong>挖掘深層動機</strong><br>
+            教師扮演明仔申請退款。學生（記者）質問其動機，揭示消費背後的孤獨與社交壓力。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>4. 轉折<br>37-47 分鐘</strong></td>
+          <td><strong>專家外衣</strong></td>
+          <td>
+            <strong>賦權與解決問題</strong><br>
+            退款失敗。學生轉變為「教育顧問」，為學校設計理財教育方案，對抗商業誘惑。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>5. 收束<br>47-62 分鐘</strong></td>
+          <td><strong>角色書寫<br>沈澱</strong></td>
+          <td>
+            <strong>情感轉移</strong><br>
+            得知母親還款的結局。明仔的一頁日記。
+          </td>
+        </tr>
+        <tr>
+          <td><strong>6. 昇華<br>62-77+ 分鐘</strong></td>
+          <td><strong>五層解讀</strong></td>
+          <td>
+            <strong>生命意義建構</strong><br>
+            從「重述事實」到「反思覺醒」。探討信用、責任與自我價值的深層關係。
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </section>
+
+    <hr />
+    <h2>🛠️ 活動詳細設計</h2>
+
+    <h3>第一階段：角色生成 (15 min) — 從碎片到生命</h3>
+    <p><strong>目標：</strong> 藉由證據引發好奇，讓學生在拼湊事實的過程中，與虛擬角色「明仔」建立連結。</p>
+    <ul>
+      <li><strong>行動：</strong>
+        <ul>
+          <li><strong>鋪設場域：</strong> 在黑板或地板中心張貼一張巨大的人形輪廓 (Role on the Wall / 牆上的角色; Neelands & Goode, 2015)。</li>
+          <li><strong>分發證據：</strong> 將「帳號資料包」內的 App Store 紀錄、WhatsApp 截圖、銀行簡訊分別影印，散落在輪廓周圍。不要直接整份交給學生，讓他們圍過來「發現」。</li>
+          <li><strong>分層紀錄：</strong>
+            <ul>
+              <li><strong>輪廓外（客觀行為）：</strong> 請學生用黑色筆寫下觀察到的確鑿事實（例如：凌晨時份還在課金、信用卡已爆額、正在向朋友借錢）。</li>
+              <li><strong>輪廓內（主觀內心）：</strong> 請學生用紅色筆推測角色當下的感受或動機（例如：害怕被朋友拋棄、想在遊戲中變強、不想面對現實的壓力）。</li>
+            </ul>
+          </li>
+          <li><strong>指令語氣：</strong> 「各位，這是一份剛剛截獲的數碼足跡。這是一個人真實生活的碎片。現在，請你們像法醫一樣冷靜，先看事實，看看你能通過這些資訊發現什麼？」<br>
+            <strong>可考慮的指引：</strong> 他幾點在消費？金額是多少？有規律嗎？他在想什麼？請把這些證據寫在輪廓外面。<br>
+            「然後，我要你們發揮直覺，走進這個人的心裡：為什麼他要在凌晨時份按下購買鍵？他在害怕什麼？他在渴望什麼？請把這些聲音寫在輪廓裡面。」
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="maister-note">
+      <strong>🎓 Maister's Note: 挖掘當下的深度</strong>
+      <ul>
+        <li><strong>捕捉沉默與驚嘆：</strong> 當學生看到凌晨時分的連續課金紀錄時，現場通常會出現低聲的討論。老師要捕捉這個「當下」的反應，立刻追問：「你們看到了什麼讓你覺得不安的地方？」
+        </li>
+        <li><strong>拒絕標籤化：</strong> 如果學生太快給出「他就是敗家」、「他很蠢」這種評判，老師要立刻利用「證據」反問：「看這條 Discord 訊息，公會成員的期待與催促對明仔產生了什麼壓力？再看銀行
+          SMS 那些冰冷的拒絕訊息，當一個人在深夜連續嘗試交易卻被拒絕時，他正處於什麼樣的心理狀態？這是一個人單純的『蠢』，還是身處於一種難以掙脫的社交與系統陷阱？我們再看仔細一點。」</li>
+        <li><strong>物件的重量：</strong>
+          老師在遞交這些紙張碎片時，動作要緩慢、慎重，彷彿這些真的是某個人的私隱。這種「敬畏感」會傳染給學生，讓他們意識到，我們正在處理的是一個關於「人」的困境，而不僅僅是理財數據。</li>
+      </ul>
+    </div>
+
+    <h3>第二階段：同步時空 (12 min) —— 身體的因果律</h3>
+    <p><strong>目標：</strong> 透過極簡時間點，讓學生在詮釋與觀察的過程中，自行建構消費背後的心理動機。</p>
+    <ul>
+      <li><strong>行動指引：</strong>
+        <ul>
+          <li><strong>極簡指令：</strong> 20 人分成 4 組（每組 5 人）。老師給出三個關鍵時空節點：<br>
+            <strong>A. 課金前的生活：</strong> <br>
+            例如：你可以想想明仔認日常中缺失了什麼，或是在追求什麼？明仔在哪裡？發生了什麼事？<br>
+            <strong>B. 課金時的明仔：</strong> <br>
+            例如：你可以呈現按下 FaceID 時的身體狀態，以及當下的社交環境（如：公會成員的反應）。當時誰在他身邊？他在想什麼？<br>
+            <strong>C. 收到帳單時的明仔：</strong> <br>
+            例如：你可以展現他面對現實衝擊時的感覺，例如那種孤獨與無助？他在哪裡看帳單？他的第一反應是什麼？<br>
+            各組自訂背景、地點與角色關係，但暫不向全班公開。
+          </li>
+          <li><strong>定格呈現：</strong> 採取「展示組」與「觀察組」的互動形式。當 A 組定格時，B、C、D 組作為觀察員。</li>
+          <li><strong>讀取場景：</strong> 老師引導觀察員進行「讀圖」。</li>
+          <li><strong>聲音浮現：</strong> 透過輕拍肩膀，啟動「思想追蹤」(Thought Tracking; Neelands & Goode, 2015)。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="maister-note">
+      <strong>🎓 Maister's Note：引導「讀圖」與「深度解碼」</strong>
+      <p>當一組展示定格畫面時，老師要引導觀察組從「生理反應」過渡到「心理景觀」：</p>
+      <ul>
+        <li><strong>從外在到內在：</strong> 「看看明仔的肌肉張力。他是在享受這場遊戲，還是在忍受某種痛苦？這是一次愉快的消費，還是被迫的止損？」</li>
+        <li><strong>解讀人際矩陣：</strong> 「旁邊的人與明仔的距離感如何？他們是在『共享』這個時刻，還是在『圍觀』他的墮落？在這個畫面中，誰擁有權力？」</li>
+      </ul>
+      <p>這種讀取能讓學生意識到，一個簡單的「購買」動作背後，交織著複雜的社交期待與自我認同危機。</p>
+    </div>
+
+    <div class="maister-note" style="border-left-color: #e67e22; background-color: #fdf2e9;">
+      <strong>給帶領者的關鍵提示 (Teacher's Note)：</strong>
+      <ul>
+        <li><strong>不糾正答案：</strong> 如果 B 組猜測 A 組在放學後，但 A
+          組的獨白顯示是在半夜，老師不需要說「你們猜錯了」，而是要接住這個火花：「原來在我們看不見的深夜，明仔的身邊依然充斥著這些聲音。」</li>
+        <li><strong>流動的視角：</strong> 20 人的班級，4 組輪流展示。每一組的「畫面 C」（月結單）都可能是前一組「畫面
+          A」的伏筆。老師要敏銳地連結這些碎片，例如：「這組的明仔在看帳單時，想起了剛才那組朋友的慫恿嗎？」</li>
+      </ul>
+    </div>
+
+    <h3>第三階段：熱座訪談 10 分鐘 —— 調查記者的追擊</h3>
+    <p><strong>目標：</strong> 透過媒體質詢的壓力，讓學生自發從不同維度（心理、法律、技術、倫理）剝開微交易與信用危機的真相。</p>
+    <ul>
+      <li><strong>行動指引：</strong>
+        <ul>
+          <li><strong>媒體身分自主建構：</strong>
+            老師不分派立場，而是對全班進行職業挑釁：「各位，這場記者會五分鐘後開始。現在請各組討論：你們代表哪一家報社、電視台或網絡媒體？是本地報章、財經專業雜誌，還是國際新聞通訊社？你們的讀者最想挖掘的是明仔的『失控的消費』，還是背後的『系統陷阱』？請定好你們的頭銜與採訪立場。」
+          </li>
+          <li><strong>提問指引（引領思考深度）：</strong>
+            「優秀的記者不會問大家都知道的事。你們要如何提問，你們會想寫一篇關於一個少年的困境，還是通過這位少年遇到的事，去探討一個更重要的議題，甚至是一整個社會的問題？你們會好奇他的家庭、他的大學壓力，還是那間遊戲公司的後台演算法？你認為讀者真正感興趣的內容是什麼？哪些問題能讓你寫出更好的客觀報導文章或新聞報導？」
+          </li>
+          <li><strong>教師入戲 (TiR)：</strong> 老師變身為「明仔」，縮在椅子上，用逃避的眼神迎接記者的閃光燈。</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="maister-note">
+      <strong>🎓 Maister's Note：老師（明仔）如何透過「當下」的回答來餵養資訊？</strong>
+      <p>明仔的回答不應只是給出答案，而是要丟出更多具備「社會衝突感」的線索，引誘記者繼續深挖。老師可以預備以下幾種「回應邏輯」：</p>
+      <ul>
+        <li><strong>將責任推給「系統」：</strong> 「我以為那是 1% 的機率，但我抽了 100
+          次都沒有。這根本不是隨機，這遊戲是會看人來欺負的！它知道我差一點就贏，所以故意不給我。你們不去查遊戲公司，來查我？」</li>
+        <li><strong>將課金轉化為「責任」：</strong> 「你們問我為什麼要課金？因為隊友都在等我！大學裡沒人需要我，但在公會裡我是核心。如果不買那件裝備，我會覺得我背叛了整個團隊。你們明白那種被需要的感覺嗎？」
+        </li>
+        <li><strong>將信貸描述為「虛擬數字」：</strong>
+          「按下去（FaceID）的時候，我根本感覺不到那是錢，那只是幾顆寶石。銀行給了我這麼多信用額，又有沒有想過我有沒有能力還？銀行就是一班騙子！明知我應付不來，為什麼還要鼓勵我辦信用卡？」</li>
+        <li><strong>揭示「大學生活」的挫敗：</strong> 「大學的人都很優秀，我坐在講堂裡像個透明人。只有在深夜登入帳號時，我才覺得自己是真的活著。那幾百塊換來的快感，比拿 A 更有真實感。」</li>
+      </ul>
+    </div>
+
+    <div class="maister-note" style="border-left-color: #e67e22; background-color: #fdf2e9;">
+      <strong>給帶領者的關鍵提示 (Teacher's Note)：</strong>
+      <ul>
+        <li><strong>捕捉「記者的立場」：</strong>
+          當某位學生問出一個非常辛辣或具備法治精神的問題時，老師（明仔）可以反擊：「你這家報社是不是收了遊戲公司的錢？為什麼一直幫他們說話？」這會逼使學生更努力地捍衛自己的記者身分與專業立場。</li>
+        <li><strong>發掘「當下的沉默」：</strong> 如果明仔回答後全場安靜，老師要接住這個瞬間。不要急著說話，讓那種孤獨感在記者會現場發酵，這就是「人」的議題浮現的時刻，也好好看著學生。</li>
+      </ul>
+    </div>
+
+    <div class="transition-point" style="margin: 30px 0; padding-top: 20px; border-top: 1px solid #eee;">
+      <h3>🎬 結束與轉折 —— 當情緒撞上法律</h3>
+      <ul style="list-style-type: none; padding-left: 0;">
+        <li style="margin-bottom: 20px;"><strong>脫戲與總結：</strong>
+          當記者會的質問與辯解達到最高點或一個適當的部份，明仔可以選擇不再回答，只是不斷重覆自己的訴求：退款。然後老師舉手示意停止，脫下代表明仔的物件（如外套或眼鏡）。<br>
+          <strong>老師引導語：</strong>
+          「記者會到此結束。請大家先脫離記者的身分，回到這裡。剛才在短短十分鐘內，我們在明仔身上看見了什麼？我們聽到了大學壓力的孤獨、聽到了被朋友需要的渴望，也聽到了對遊戲演算法的指控。」
+        </li>
+        <li style="margin-bottom: 20px;"><strong>時間跳躍與現實介入 (Time Jump)：</strong>
+          老師調整語氣，將氛圍從感性的訪談帶向理性的事實：
+          「現在，我們將時間往後撥幾天。記者們發出了報導，引起了社會關注，明仔也正式向消費者委員會遞交了申訴，希望以『被誤導』和『系統成癮』為由申請退款。社會大眾都想知道，法律會站在哪一邊？」
+        </li>
+        <li><strong>出示轉折：消委會裁決書 (The Turning Point)：</strong> 老師鄭重地拿出附件二的裁決書。</li>
+      </ul>
+    </div>
+
+    <h3>第四階段：專家會議 (10 min) —— 理財素養的防禦機制</h3>
+    <p><strong>目標：</strong> 透過專業會議的壓力，將「明仔」的感性悲劇轉化為理性的理財教育對策，讓學生在解決問題中建構金融素養。</p>
+    <ul>
+      <li><strong>行動指引：</strong>
+        <ul>
+          <li><strong>空間重組 (Physical Transformation)：</strong>
+            老師以專業、俐落的動作邀請各組代表將椅子搬到教室中心，圍成一個緊密的圓圈。老師則坐在外圈稍偏的位置，扮演「教育局資深秘書」。</li>
+          <li><strong>啟動會議：</strong>
+            「各位顧問，局長非常重視這次明仔案引發的社會震盪。雖然消委會判他敗訴，但局長認為真正的問題在於：我們在中學教育漏掉了什麼，才導致學生成為這種商業機制的犧牲品？今日的閉門會議，重點只有一個：為了避免下一個明仔，中學理財課程必須加入哪些『理財知識』？」
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="maister-note">
+      <strong>🎓 Maister's Note：老師（資深秘書）的引領藝術</strong>
+      <p>老師不使用黑板，而是透過筆記本和精準的語詞回饋，讓學生的聲音在圓圈中心碰撞。你的職責是捕捉那些零散的直覺，將它們提煉成理財核心概念。</p>
+      <ul>
+        <li><strong>追問「信貸與責任」的連結：</strong> 當學生提議：「要教學生知道那些錢不是自己的，遲早要還。」 老師（秘書）： 「顧問，您的意思是否指中學課程應優先解構<strong>『信貸</strong>
+          <strong>(Credit)』</strong>的本質？即：每一筆支付都是一項與未來簽訂的合約，而信用並非財富，而是『未來的負債』？如果是這樣，我們該如何教導學生在按下 FaceID
+          的那一秒，感受到這種合約的法律重量？」
+        </li>
+        <li><strong>追問「消費動機與自我認知」：</strong> 當學生說：「要教他們不要為了面子去買虛擬裝備。」 老師（秘書）：
+          「明白。所以專家的建議是：理財教育不應只教算術，更要教<strong>『欲望管理』</strong>？即是辨析哪些是維持生活的『需要』，哪些是為了補償孤獨感的『想要』？您認為這種心理層面的理財教育，在中學階段是否比記帳更重要？」
+        </li>
+        <li><strong>追蹤「系統警覺性」：</strong> 當學生提到：「遊戲設計得很卑鄙，讓人停不下來。」 老師（秘書）：
+          「針對這點，顧問是否認為學生需要理解<strong>『數碼消費陷阱』</strong>？例如微交易如何利用<strong>『無接觸支付』</strong>來剝奪金錢流失的真實感？我們該如何在教學中，讓學生學會重新建立支付時的『阻力』？」
+        </li>
+      </ul>
+    </div>
+
+    <div class="maister-note" style="border-left-color: #e67e22; background-color: #fdf2e9;">
+      <strong>給帶領者的關鍵提示 (Teacher's Note)：</strong>
+      <ul>
+        <li><strong>利用「移動椅子」製造張力：</strong> 如果會議中有顧問意見相左，老師可以請他們調整椅子位置，面對面深入辯論。這種身體的移動能增加討論的嚴肅性。</li>
+        <li><strong>強化「顧問身分」：</strong> 若學生開始嬉笑，老師立刻以秘書口吻介入：「顧問，您的意見將被錄入正式會議紀錄，影響明年全港中學的課程大綱，請務必嚴謹提議。」</li>
+        <li><strong>捕捉「當下」的理財火花：</strong> 當學生在討論中突然意識到「原來 18 歲後的法律責任是不可逆轉的」時，那個瞬間的沉默就是最成功的理財教育。</li>
+      </ul>
+    </div>
+
+    <h3>第五階段：反思與收束 (15 min+) —— 債務的移轉與餘溫</h3>
+    <ul>
+      <li><strong>虛擬現實的碰撞 (The Final Twist)：</strong>
+        椅子依然維持剛才專家會議的圓圈。老師站在圓圈中心，不急著搬動任何東西，以一種近乎平靜的語氣敘述故事的結局：<br>
+        「判決書下來了，法律上明仔輸了。但事件並未結束。明仔一家財政並不充裕，但他的母親在知道這件事後，最終還是花了自己很大的一筆積蓄，替明仔償還了這些貸款。」
+      </li>
+      <li><strong>角色書寫：明仔的一頁日記：</strong>
+        老師分發白紙，請學生在安靜中寫作。<br>
+        「當晚，明仔坐在桌前。錢還清了，但氣氛卻比之前更沉重。他在日記上寫下了他的感受。你們認為，明仔在日記上，寫了什麼？」
+      </li>
+      <li><strong>閱讀與沉澱：</strong>
+        寫作完成後，老師邀請大家把日記圍成一圈放在地上，並邀請同學閱讀其它明仔的日記。老師不需要作出解讀，但請和學生一同四處閱讀。
+      </li>
+    </ul>
+    </section>
+
+    <!-- Section 5: Phase 6 (New) -->
+    <section>
+      <h3>第六階段：反思與收束 (15 min+) —— 生命意義的五層解讀</h3>
+      <p>學生閱讀完地上的日記後，老師邀請大家就在原位的圓圈坐下，保持剛才那種讀完心聲後的靜謐感。</p>
+      <ul>
+        <li><strong>第一層次：重述事實 (The Action)：</strong><br>
+          老師提問： 「在剛剛這些日記中，我們看到明仔在還清了那筆錢後，他的生活空間呈現出一種什麼樣的氣氛？他與家人的關係變成了什麼樣子？」<br>
+          <em>目的： 確立「債務雖清，痕跡猶在」的現實起點。</em>
+        </li>
+        <li><strong>第二層次：挖掘意圖 (The Plot/Logic)：</strong><br>
+          老師提問： 「在日記裡，明仔反覆提到的痛苦，真的只是因為那筆錢嗎？當初他一次又一次按下購買鍵時，他真正想填補的那個『洞』是什麼？」<br>
+          <em>目的： 引導學生看見消費背後的<strong>「心理代價」</strong>，理解金錢往往被用來代償現實中的挫敗或孤獨。</em>
+        </li>
+        <li><strong>第三層次：分析情境 (The Context)：</strong><br>
+          老師提問： 「明仔的故事，如果換成是賭博、或是為了追趕潮流而過度消費，當中的掙扎會有分別嗎？為什麼在我們的社會裡，我們這麼需要透過『擁有某些東西』來證明自己活得很好？」<br>
+          <em>目的： 將議題擴展到社會整體的<strong>「自我形象」與「價值取向」</strong>。</em>
+        </li>
+        <li><strong>第四層次：探究象徵與隱喻 (The Implication)：</strong><br>
+          老師提問： 「明仔雖然還了錢，但他日記裡提到的那種『沉重感』是從哪裡來的？這反映了當一個人試圖用『未來的自己』去換取『現在的快感』時，他真正失去的是什麼？」<br>
+          <em>目的： 探討<strong>「信用」與「責任」</strong>的深層隱喻——即人與自己未來關係的斷裂。</em>
+        </li>
+        <li><strong>第五層次：反思與覺醒 (Individual Signification)：</strong><br>
+          老師提問：
+          「我們今天在這裡討論明仔，其實也是在看我們自己。在你的生命中，有沒有什麼東西也像這個『帳號』一樣，讓你不知不覺地一直『登入』其中，難以抽身？面對這些誘惑與認同的渴望，你現在會想對那個『登入中』的自己說什麼？」<br>
+          <em>目的： 讓戲劇經驗轉化為對<strong>「自我價值觀」</strong>的覺醒，思考如何在物慾橫流的社會中，守住內心的真實。</em>
+        </li>
+      </ul>
+
+      <div class="maister-note">
+        <strong>🎓 Maister's Note：最後的定位</strong>
+        <p>作為導師，在此時要確保討論不掉入「理財技巧」的教導，而是停留在「生命教育」的高度：</p>
+        <ul>
+          <li><strong>捕捉「價值觀的碰撞」：</strong> 當學生提到「明仔覺得沒了那個裝備，他就什麼都不是」時，這是最重要的時刻。老師可以追問：「如果我們不再透過消費來定義自己，那我們還剩下什麼？」</li>
+          <li><strong>維持「當下」的重量：</strong> 學生讀出的日記文字是這堂課的聖經。用這些文字作為解說的引子，能讓反思緊貼著人的情感。</li>
+        </ul>
+        <br>
+        <strong>老師結束語：</strong>
+        「錢可以還清，但一個人的價值，從來不需要靠帳號裡的數據來證明。今天我們看見了明仔的迷失，也看見了他的承擔。希望當你們走出這間教室，面對這個不斷叫你『買』、叫你『贏』的社會時，你們心裡那個真正的帳號，能有勇氣選擇何時登出，何時堅守。」
+      </div>
+    </section>
+
+    <hr />
+    <h3>📂 附件：(可供列印的完整文件)</h3>
+
+    <div class="prop-container">
+      <div class="prop-label">附件一：帳號資料包</div>
+
+      <div class="evidence-card">
+        <strong>📱 App Store 交易明細</strong>
+        <div
+          style="font-size: 0.9em; margin-bottom: 10px; border-bottom: 1px dashed #ccc; padding-bottom: 5px; margin-top: 5px;">
+          <strong>帳戶名稱：</strong> Ming_Jai_99<br>
+          <strong>支付方式：</strong> 信用卡 (末四碼 8821)<br>
+          <strong>快速支付：</strong> <span style="color: #27ae60;">已啟用 (FaceID)</span>
+        </div>
+        <table style="width: 100%; font-size: 0.85em; border-collapse: collapse; margin: 0;">
+          <thead>
+            <tr style="border-bottom: 2px solid #aaa; background: #f0f0f0;">
+              <th style="padding: 4px; text-align: left;">#</th>
+              <th style="padding: 4px; text-align: left;">時間</th>
+              <th style="padding: 4px; text-align: left;">項目名稱</th>
+              <th style="padding: 4px; text-align: right;">金額 (HK$)</th>
+              <th style="padding: 4px; text-align: center;">狀態</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 2px;">01</td>
+              <td>22:10</td>
+              <td>英雄福袋（小）</td>
+              <td style="text-align: right;">38.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">02</td>
+              <td>22:45</td>
+              <td>英雄福袋（小）</td>
+              <td style="text-align: right;">38.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">03</td>
+              <td>23:20</td>
+              <td>英雄福袋（小）</td>
+              <td style="text-align: right;">38.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">04</td>
+              <td>23:48</td>
+              <td>英雄福袋（中）</td>
+              <td style="text-align: right;">78.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">05</td>
+              <td>00:10</td>
+              <td>英雄福袋（中）</td>
+              <td style="text-align: right;">78.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">06</td>
+              <td>00:42</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">07</td>
+              <td>00:43</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">08</td>
+              <td>00:45</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">09</td>
+              <td>00:46</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">10</td>
+              <td>00:48</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">11</td>
+              <td>00:49</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">12</td>
+              <td>00:51</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">13</td>
+              <td>00:52</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">14</td>
+              <td>00:53</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">15</td>
+              <td>00:55</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">16</td>
+              <td>00:56</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">17</td>
+              <td>00:57</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+            <tr>
+              <td style="padding: 2px;">18</td>
+              <td>00:59</td>
+              <td>英雄福袋（特大）</td>
+              <td style="text-align: right;">788.00</td>
+              <td style="text-align: center; color: green;">成功</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="evidence-card">
+        <strong>🎧 Discord 頻道：【星辰傳說】公會組隊專區</strong><br>
+        <div style="font-size: 0.85em; margin-top: 5px;">
+          <p style="margin: 2px 0;"><strong>[22:15] 玩家 A (小K)：</strong> @Ming_Jai 大佬，剛才打副本你那招攻擊力不夠啊，對面那隻王差 5%
+            血就倒了，好可惜！</p>
+          <p style="margin: 2px 0;"><strong>[22:50] 玩家 B (阿龍)：</strong>
+            明仔大佬，聽說「英雄福袋」更新了，那個限時英雄的破防屬性超強。如果你抽到，我們公會今晚一定能衝上全服前十。</p>
+          <p style="margin: 2px 0;"><strong>[23:25] 玩家 C (雪兒)：</strong> 哇！我剛才一抽（小包）就中了！我是不是手氣太好了？ @Ming_Jai
+            大佬你運氣一向比我好，你不去試試？</p>
+          <p style="margin: 2px 0;"><strong>[23:55] 玩家 A (小K)：</strong> 大佬就是大佬，肯定是抽「特大包」直接保底啦。@Ming_Jai 沒你帶隊，我們今晚不用玩了。
+          </p>
+          <p style="margin: 2px 0;"><strong>[00:15] 明仔：</strong> 我在看。</p>
+          <p style="margin: 2px 0;"><strong>[00:30] 玩家 B (阿龍)：</strong>
+            別看啦，福袋倒數計時快結束了！大家都在等你，拿不到那個英雄，你剛才那幾次不就白抽了？差一點點就中了啊！</p>
+          <p style="margin: 2px 0;"><strong>[00:35] 玩家 C (雪兒)：</strong> 大佬加油！全公會的希望就在你身上了！</p>
+          <p style="margin: 2px 0;"><strong>[00:41] 明仔：</strong> 等我。</p>
+        </div>
+      </div>
+
+      <div class="evidence-card">
+        <strong>⚠️ 銀行 SMS 提示</strong><br>
+        <span style="font-size: 0.85em; color: #c0392b;">
+          [01:00] XX銀行： 【交易拒絕】您的信用卡 (末四碼 8821) 於 01:00 之 HK$ 788.00 交易因「可用額度不足」已被拒絕。如需協助請致電客戶服務熱線。<br>
+          [01:01] XX銀行： 【交易拒絕】您的信用卡 (末四碼 8821) 於 01:01 之 HK$ 788.00 交易因「可用額度不足」已被拒絕。如需協助請致電客戶服務熱線。<br>
+          [01:02] XX銀行： 【交易拒絕】您的信用卡 (末四碼 8821) 於 01:02 之 HK$ 788.00 交易因「可用額度不足」已被拒絕。如需協助請致電客戶服務熱線。
+        </span>
+      </div>
+    </div>
+
+    <div class="prop-container">
+      <div class="prop-label">附件二：消委會裁決書</div>
+      <div class="official-letter">
+        <div style="text-align: center; border-bottom: 1px solid #000; padding-bottom: 10px; margin-bottom: 20px;">
+          <h3>消費者委員會</h3>
+          <p>申訴編號：CC-2026-0214-MJ</p>
+        </div>
+        <p><strong>致：申請人 Ming Jai</strong></p>
+        <p>關於閣下針對 XX 遊戲公司提出的退款申請，本會經審查後裁定如下：</p>
+        <p><strong>裁決結果：<span style="border: 2px solid #000; padding: 2px 5px;">不予受理</span></strong></p>
+        <p><strong>理由：</strong></p>
+        <ol>
+          <li>交易紀錄顯示所有購買均通過生物認證，視為本人授權。</li>
+          <li>閣下已年滿 18 歲，具備完全行為能力。雖遊戲設計具有誘導性，但並未構成欺詐。</li>
+          <li>「衝動」並非合法的撤銷契約理由。</li>
+        </ol>
+        <p>本案已結案。建議閣下尋求相關財務輔導協助。</p>
+        <div style="margin-top: 40px; text-align: right;">
+          <p>投訴審查組 謹啟</p>
+        </div>
+      </div>
+    </div>
+
+    </section>
+    <hr />
+    <h2>📚 參考文獻 (References)</h2>
+    <div style="font-size: 0.9em; line-height: 1.8;">
+      <p style="padding-left: 2em; text-indent: -2em;">Heathcote, D., & Bolton, G. (1995). <i>Drama for learning:
+          Dorothy Heathcote's mantle of the expert approach to education</i>. Heinemann.</p>
+      <p style="padding-left: 2em; text-indent: -2em;">Neelands, J., & Goode, T. (2015). <i>Structuring drama work</i>
+        (3rd ed.). Cambridge University Press.</p>
+      <p style="padding-left: 2em; text-indent: -2em;">O'Neill, C. (1995). <i>Drama worlds: A framework for process
+          drama</i>. Heinemann.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
